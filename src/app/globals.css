@@ -1,0 +1,73 @@
+/* ============================================================
+   NUTAL dizajn sistem — tokeni (izvor: NUTAL-Dizajn-Brief.md §4)
+   Pravilo: komponente NIKAD ne koriste sirove HEX vrijednosti,
+   samo ove varijable. Promjena brenda = promjena na jednom mjestu.
+   ============================================================ */
+
+:root {
+  /* Boje (§4.2) */
+  --nutal-pistacija: #f0f4e8;      /* primarna pozadina */
+  --nutal-zelena: #3a7d2c;         /* brend akcenti, linkovi, hover */
+  --nutal-zelena-brend: #28713E;   /* RAL 6001 — logo kontekst, borderi */
+  --nutal-zelena-tamna: #1a3312;   /* portal strip, audience bar, footer */
+  --nutal-bijela: #ffffff;
+  --nutal-tekst: #141a10;
+  --nutal-antracit: #28261e;
+
+  /* Tipografija (§4.1) — fontovi self-hostani kroz @fontsource (layout.tsx) */
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Spacing skala */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 40px;
+  --space-5: 64px;
+  --space-6: 96px;
+
+  /* Ostalo */
+  --radius: 4px;              /* §4.4 — maksimalni border-radius */
+  --transition: 250ms ease;   /* §4.5 — animacije ≤300ms */
+  --max-width: 1280px;        /* §6.6 — najveći breakpoint */
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--nutal-tekst);
+  background: var(--nutal-pistacija);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.15;
+}
+
+a { color: var(--nutal-zelena); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Eyebrow label (§4.1) */
+.eyebrow {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+/* Tehničke vrijednosti (§4.1) */
+.mono {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}

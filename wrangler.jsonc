@@ -1,0 +1,9 @@
+{
+  // Cloudflare Workers konfiguracija — statički sajt iz /out foldera
+  "name": "nutal-web",
+  "compatibility_date": "2026-07-26",
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  }
+}

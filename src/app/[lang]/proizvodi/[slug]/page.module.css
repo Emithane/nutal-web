@@ -1,0 +1,26 @@
+.wrap { max-width: 840px; margin: 0 auto; padding: var(--space-5) var(--space-3); }
+.breadcrumb { font-size: 13px; color: rgba(20, 26, 16, 0.6); margin-bottom: var(--space-3); }
+.breadcrumb a { color: rgba(20, 26, 16, 0.6); }
+.breadcrumb a:hover { color: var(--nutal-zelena); }
+.naslov { font-size: clamp(32px, 4.5vw, 48px); margin-bottom: var(--space-2); }
+.opis { font-size: 18px; color: rgba(20, 26, 16, 0.75); max-width: 640px; margin-bottom: var(--space-4); }
+
+.osobine { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-bottom: var(--space-4); }
+.osobina dt { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(20, 26, 16, 0.55); }
+.osobina dd { font-family: var(--font-mono); font-size: 15px; letter-spacing: -0.5px; margin-top: 4px; }
+
+.tehSekcija { margin-bottom: var(--space-4); }
+.tehNaslov {
+  font-size: 24px;
+  padding-bottom: var(--space-1);
+  border-bottom: 2px solid var(--nutal-zelena-brend); /* RAL 6001 linija */
+  margin-bottom: var(--space-2);
+}
+/* §4.4 — mono vrijednosti, tanke linije, bez zebra pruga */
+.tehTabela { width: 100%; border-collapse: collapse; }
+.tehTabela th, .tehTabela td { text-align: left; padding: 12px 0; border-bottom: 1px solid rgba(20, 26, 16, 0.1); vertical-align: top; }
+.tehTabela th { font-weight: 500; font-size: 14px; color: rgba(20, 26, 16, 0.65); width: 220px; padding-right: var(--space-2); }
+.tehTabela td { font-family: var(--font-mono); font-size: 14px; letter-spacing: -0.5px; }
+
+.napomena { font-size: 14px; color: rgba(20, 26, 16, 0.55); }
+@media (max-width: 480px) { .tehTabela th { width: 150px; } }

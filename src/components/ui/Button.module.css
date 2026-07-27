@@ -1,0 +1,34 @@
+.btn {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  padding: 14px 28px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+}
+.btn:hover { text-decoration: none; }
+
+.primary {
+  background: var(--nutal-zelena-tamna);
+  color: var(--nutal-bijela);
+  border: 1px solid var(--nutal-zelena-tamna);
+}
+.primary:hover { background: var(--nutal-zelena-brend); border-color: var(--nutal-zelena-brend); }
+
+.secondary {
+  background: transparent;
+  color: var(--nutal-zelena);
+  border: 1px solid var(--nutal-zelena);
+}
+.secondary:hover { background: var(--nutal-zelena); color: var(--nutal-bijela); }
+
+/* na tamnim podlogama (portal strip, footer) */
+.light {
+  background: transparent;
+  color: var(--nutal-bijela);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.light:hover { background: var(--nutal-bijela); color: var(--nutal-zelena-tamna); }

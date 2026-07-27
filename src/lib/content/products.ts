@@ -58,3 +58,97 @@ export function countByPortal(): Record<Portal, number> {
     Flooring: getProductsByPortal("Flooring").length,
   };
 }
+
+/* ------------------------------------------------------------------
+ * Prikazne kategorije za homepage (§3.1.5) — numerički listing 01–06.
+ * Kolona "Kategorija 1" u katalogu je nekonzistentna (kombinovane
+ * vrijednosti tipa "Metal / Antikorozija — metal"), pa se grupisanje
+ * radi predikatima, a broj proizvoda se RAČUNA iz podataka — nikad
+ * ne hardkodirati broj koji drift-uje od kataloga.
+ * ------------------------------------------------------------------ */
+
+export interface DisplayCategory {
+  id: string;
+  naziv: string;
+  opis: string;
+  href: string; // odredište do portalnih filtera (sedmica 2-3)
+  count: number;
+}
+
+const kat = (p: Product) => (p.kategorija ?? "").toLowerCase();
+
+
+
+const DEFS: { def: Omit<DisplayCategory, "count">; match: (p: Product) => boolean }[] = [
+  {
+    def: {
+      id: "metal",
+      naziv: "Metal i antikorozija",
+      opis: "Temelji, međuslojevi i završni premazi za čelik — od ograde do konstrukcije po ISO 12944.",
+      href: "/industry",
+    },
+    match: (p) => kat(p).includes("metal") || kat(p).includes("antikorozija"),
+  },
+  {
+    def: {
+      id: "drvo",
+      naziv: "Drvo",
+      opis: "Lazure, laci i temelji za vanjsku i unutrašnju drvenariju, do industrijskih linija za namještaj.",
+      href: "/diy",
+    },
+    match: (p) => kat(p).startsWith("drvo"),
+  },
+  {
+    def: {
+      id: "zid",
+      naziv: "Zid i fasada",
+      opis: "Disperzije za unutrašnje zidove i akrilne fasadne boje.",
+      href: "/diy",
+    },
+    match: (p) => kat(p).includes("zid"),
+  },
+  {
+    def: {
+      id: "podovi",
+      naziv: "Podni sistemi",
+      opis: "Epoksidni i poliuretanski sistemi za industrijske i stambene podove, u slojevima.",
+      href: "/flooring",
+    },
+    match: (p) => kat(p).includes("epoksi") || kat(p).includes("pu sistemi"),
+  },
+  {
+    def: {
+      id: "ceste",
+      naziv: "Ceste i signalizacija",
+      opis: "Boje za horizontalnu signalizaciju — putna bijela i žuta, premazi za asfalt i beton.",
+      href: "/industry",
+    },
+    match: (p) => kat(p).includes("ceste"),
+  },
+  {
+    def: {
+      id: "pomocni",
+      naziv: "Pomoćni materijali i posebna namjena",
+      opis: "Razrjeđivači, sredstva za pripremu podloge i premazi posebne namjene — od školske table do bazena.",
+      href: "/industry",
+    },
+    match: (p) => kat(p).includes("pomoćni") || kat(p).includes("posebna") || kat(p).includes("bazen"),
+  },
+];
+
+export function getDisplayCategories(): DisplayCategory[] {
+  return DEFS.map(({ def, match }) => ({ ...def, count: ALL.filter(match).length }));
+}
+
+/** Statistike za homepage (§3.1.6). Sve izračunato — ništa hardkodirano. */
+export function getHomeStats() {
+  const tehnologije = new Set(
+    ALL.map((p) => p.tehnologija).filter((t): t is string => Boolean(t))
+  );
+  return {
+    godinaOsnivanja: 1996,
+    godinaProizvodnje: new Date().getFullYear() - 1996,
+    brojProizvoda: ALL.length,
+    brojTehnologija: tehnologije.size,
+  };
+}

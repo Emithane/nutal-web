@@ -1,0 +1,146 @@
+/* ---------- audience bar (§3.1.1) ---------- */
+.audienceBar { background: var(--nutal-zelena-tamna); }
+.audienceInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-3);
+  display: flex;
+  gap: var(--space-3);
+}
+.audienceLink {
+  color: var(--nutal-bijela);
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding: 8px 0;
+  opacity: 0.85;
+}
+.audienceLink:hover { opacity: 1; text-decoration: none; }
+
+/* ---------- main nav ---------- */
+.header { position: relative; z-index: 50; }
+.mainNav { background: var(--nutal-bijela); border-bottom: 1px solid rgba(20, 26, 16, 0.08); }
+.mainNavInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-3);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  height: 76px;
+}
+
+/* sticker logo (§4.3) — prelazi granicu nava u hero */
+.logoLink { display: block; align-self: flex-start; margin-bottom: -40px; z-index: 51; position: relative; }
+.logo {
+  width: 96px;
+  height: auto;
+  filter: drop-shadow(0 4px 10px rgba(20, 26, 16, 0.25));
+}
+
+.navLinks { display: flex; gap: var(--space-3); margin-left: auto; }
+.navLink { color: var(--nutal-tekst); font-weight: 500; font-size: 15px; }
+.navLink:hover { color: var(--nutal-zelena); text-decoration: none; }
+
+.actions { display: flex; align-items: center; gap: var(--space-2); }
+.iconBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--nutal-tekst);
+  padding: 10px;
+  display: inline-flex;
+  border-radius: var(--radius);
+}
+.iconBtn:hover { color: var(--nutal-zelena); }
+.ctaLink {
+  background: var(--nutal-zelena-tamna);
+  color: var(--nutal-bijela);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: var(--radius);
+  white-space: nowrap;
+}
+.ctaLink:hover { background: var(--nutal-zelena-brend); text-decoration: none; }
+.burger { display: none; }
+
+/* ---------- mobilni overlay (§6.6 — full screen, audience bar ostaje) ---------- */
+.mobileOverlay {
+  position: fixed;
+  inset: 0;
+  top: 110px; /* audience bar + main nav ostaju vidljivi */
+  background: var(--nutal-bijela);
+  z-index: 49;
+  overflow-y: auto;
+}
+.mobileNav { display: flex; flex-direction: column; padding: var(--space-3); }
+.mobileLink {
+  color: var(--nutal-tekst);
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-weight: 600;
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid rgba(20, 26, 16, 0.08);
+}
+.mobileLink:hover { color: var(--nutal-zelena); text-decoration: none; }
+
+/* ---------- pretraga ---------- */
+.searchOverlay { position: fixed; inset: 0; z-index: 60; }
+.searchBackdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 26, 16, 0.55);
+  border: none;
+  cursor: default;
+  z-index: 0;
+}
+.searchBox {
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+  margin: 12vh auto 0;
+  background: var(--nutal-bijela);
+  border-radius: var(--radius);
+  padding: var(--space-2);
+  box-shadow: 0 20px 60px rgba(20, 26, 16, 0.3);
+}
+.searchRow { display: flex; align-items: center; gap: var(--space-1); }
+.searchInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-family: var(--font-sans);
+  font-size: 18px;
+  padding: 10px 8px;
+  color: var(--nutal-tekst);
+  background: transparent;
+}
+.searchResults { list-style: none; margin-top: var(--space-1); border-top: 1px solid rgba(20, 26, 16, 0.08); }
+.searchHit {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-2);
+  align-items: baseline;
+  padding: 12px 8px;
+  color: var(--nutal-tekst);
+  border-radius: var(--radius);
+}
+.searchHit:hover { background: var(--nutal-pistacija); text-decoration: none; }
+.searchHitName { font-weight: 500; }
+.searchHitCat { font-size: 12px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--nutal-zelena); white-space: nowrap; }
+.searchEmpty { padding: 16px 8px; color: rgba(20, 26, 16, 0.6); font-size: 15px; }
+
+/* ---------- breakpointi (§6.6) ---------- */
+@media (max-width: 1024px) {
+  .navLinks { gap: var(--space-2); }
+}
+@media (max-width: 768px) {
+  .navLinks, .ctaLink { display: none; }
+  .burger { display: inline-flex; }
+  .mainNavInner { height: 64px; }
+  .logo { width: 72px; }
+  .logoLink { margin-bottom: -28px; }
+  .mobileOverlay { top: 98px; }
+}

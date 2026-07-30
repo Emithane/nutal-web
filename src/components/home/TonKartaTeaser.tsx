@@ -2,6 +2,8 @@ import Button from "@/components/ui/Button";
 import styles from "./Home.module.css";
 
 /**
+ * PRIVREMENO VAN HOMEPAGE (redukcija, sedmica 2) — vraća se u page.tsx
+ * kad NUTAL dostavi šifre nijansi i hex kodove za pravu ton kartu.
  * §3.1.4 — grid swatcheva + CTA. Prave šifre nijansi i hex kodovi dolaze
  * od NUTAL-a (§5.2) i pune se kroz CMS — do tada je grid vizuelni nagovještaj
  * BEZ oznaka (ne izmišljamo šifre nijansi).
@@ -25,7 +27,7 @@ export default function TonKartaTeaser({ lang }: { lang: string }) {
       <p className={styles.tonNote}>
         Kompletna ton karta sa šiframa nijansi je u pripremi.
       </p>
-      <Button href={`/${lang}/ton-karta`} variant="secondary">Istraži boje</Button>
+      <Button href={`/${lang}/ton-karta`} variant="secondary">Istražite boje</Button>
     </section>
   );
 }

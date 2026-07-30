@@ -7,6 +7,8 @@ import tutorials from "@/data/tutorials.json";
 
 export interface Tutorial {
   slug: string;
+  /** ključ u PHOTOS registru privremenih fotografija */
+  fotoKey: string;
   naslov: string;
   kategorija: string;
   portal: string;

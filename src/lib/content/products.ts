@@ -93,7 +93,7 @@ const DEFS: { def: Omit<DisplayCategory, "count">; match: (p: Product) => boolea
     def: {
       id: "drvo",
       naziv: "Drvo",
-      opis: "Lazure, laci i temelji za vanjsku i unutrašnju drvenariju, do industrijskih linija za namještaj.",
+      opis: "Lazure, lakovi i temelji za vanjsku i unutrašnju drvenariju, do industrijskih linija za namještaj.",
       href: "/diy",
     },
     match: (p) => kat(p).startsWith("drvo"),

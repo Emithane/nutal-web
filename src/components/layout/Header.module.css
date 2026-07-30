@@ -80,7 +80,7 @@
   color: var(--nutal-tekst);
   font-family: var(--font-serif);
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 400;
   padding: var(--space-2) 0;
   border-bottom: 1px solid rgba(20, 26, 16, 0.08);
 }

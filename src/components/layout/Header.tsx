@@ -87,7 +87,7 @@ export default function Header({ lang }: { lang: string }) {
               </svg>
             </button>
             <Link href={p("/kontakt")} className={styles.ctaLink}>
-              Zatraži ponudu
+              Zatražite ponudu
             </Link>
             <button
               type="button"

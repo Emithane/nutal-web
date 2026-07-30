@@ -4,20 +4,23 @@
     "naslov": "Bojenje interijera od A do Ž",
     "kategorija": "Zid i fasada",
     "portal": "DIY",
-    "sazetak": "Krpljenje, brušenje, grundiranje i dva sloja disperzije — redoslijed koji sprječava fleke i vidljive tragove valjka."
+    "sazetak": "Krpljenje, brušenje, grundiranje i dva sloja disperzije — redoslijed koji sprječava mrlje i vidljive tragove valjka.",
+    "fotoKey": "tutorialInterior"
   },
   {
     "slug": "priprema-metala-prije-premaza",
     "naslov": "Priprema metala prije antikorozivnog premaza",
     "kategorija": "Metal i antikorozija",
     "portal": "Industry",
-    "sazetak": "Rđa, masnoća i stara boja skraćuju vijek svakog premaza. Šta se skida, čime, i kada je podloga spremna za temelj."
+    "sazetak": "Korozija, masnoća i stara boja skraćuju vijek svakog premaza. Šta se skida, čime, i kada je podloga spremna za temelj.",
+    "fotoKey": "industrySteel"
   },
   {
     "slug": "epoksidni-pod-u-garazi",
     "naslov": "Ugradnja epoksidnog poda u garaži",
     "kategorija": "Podni sistemi",
     "portal": "Flooring",
-    "sazetak": "Od provjere vlage u betonu do završnog sloja — koraci, vremena sušenja između slojeva i najčešće greške."
+    "sazetak": "Od provjere vlage u betonu do završnog sloja — koraci, vremena sušenja između slojeva i najčešće greške.",
+    "fotoKey": "flooringEpoxy"
   }
 ]

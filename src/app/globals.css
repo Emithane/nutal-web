@@ -15,8 +15,9 @@
   --nutal-antracit: #28261e;
 
   /* Tipografija (§4.1) — fontovi self-hostani kroz @fontsource (layout.tsx) */
-  --font-serif: "Playfair Display", Georgia, serif;
-  --font-sans: "Inter", system-ui, sans-serif;
+  --font-serif: "Libre Caslon Display", "Libre Caslon Text", Georgia, serif;
+  --font-serif-text: "Libre Caslon Text", Georgia, serif;
+  --font-sans: "Albert Sans", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 
   /* Spacing skala */
@@ -48,9 +49,9 @@ body {
 
 h1, h2, h3 {
   font-family: var(--font-serif);
-  font-weight: 700;
-  letter-spacing: -0.5px;
-  line-height: 1.15;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 1.18;
 }
 
 a { color: var(--nutal-zelena); text-decoration: none; }

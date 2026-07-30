@@ -2,15 +2,20 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 /*
- * Fontovi iz briefa §4.1 — self-hostani kroz @fontsource pakete
- * (bez poziva ka Google serverima: brže, GDPR-čišće).
- * Težine tačno po specifikaciji: Playfair 600/700, Inter 400/500/600, Mono 500.
+ * Fontovi — self-hostani kroz @fontsource (brže, GDPR-čišće).
+ * IZMJENA BRIEFA §4.1 (odluka klijenta, sedmica 2): naslovi prelaze sa
+ * Playfair Display na Libre Caslon (Farrow & Ball karakter — stariji,
+ * mirniji serif, normalna debljina). Display (400) za velike naslove,
+ * Text (700) za manje naslove gdje treba čvrstine. Inter i Mono ostaju.
  */
-import "@fontsource/playfair-display/600.css";
-import "@fontsource/playfair-display/700.css";
-import "@fontsource/inter/400.css";
-import "@fontsource/inter/500.css";
-import "@fontsource/inter/600.css";
+import "@fontsource/libre-caslon-display/400.css";
+import "@fontsource/libre-caslon-text/400.css";
+import "@fontsource/libre-caslon-text/700.css";
+/* IZMJENA BRIEFA §4.1 (odluka klijenta, sedmica 2): tekstualni font
+ * Inter → Albert Sans (skandinavski geometrijski, par Libre Caslonu). */
+import "@fontsource/albert-sans/400.css";
+import "@fontsource/albert-sans/500.css";
+import "@fontsource/albert-sans/600.css";
 import "@fontsource/jetbrains-mono/500.css";
 
 export const metadata: Metadata = {

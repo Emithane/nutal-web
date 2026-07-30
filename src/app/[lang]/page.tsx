@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import Hero from "@/components/home/Hero";
-import PortalStrip from "@/components/home/PortalStrip";
-import TonKartaTeaser from "@/components/home/TonKartaTeaser";
 import Kategorije from "@/components/home/Kategorije";
 import Statistike from "@/components/home/Statistike";
 import KalkulatorTeaser from "@/components/home/KalkulatorTeaser";
@@ -14,16 +12,19 @@ export const metadata: Metadata = {
 };
 
 /**
- * Homepage — 9 sekcija tačnim redoslijedom iz briefa §3.1.
- * Nav (1) i footer (9) su u [lang]/layout.tsx — dijele ih sve stranice.
+ * Homepage — redukovana verzija (IZMJENA BRIEFA §3.1, odluka klijenta,
+ * sedmica 2): landing je usmjerivač za tri publike. Uklonjeni:
+ * - portal strip (duplikat hero panela; brojevi proizvoda preseljeni u hero)
+ * - ton karta teaser (vraća se kad NUTAL dostavi šifre nijansi — komponenta
+ *   TonKartaTeaser postoji i čeka)
+ * Tok: hero (usmjeri) → kategorije (mapa po materijalu) → statistike (dokaz)
+ * → kalkulator (alat) → tutorijali (DIY dubina). Nav i footer u layout-u.
  */
 export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
   return (
     <main>
       <Hero lang={lang} />
-      <PortalStrip lang={lang} />
-      <TonKartaTeaser lang={lang} />
       <Kategorije lang={lang} />
       <Statistike />
       <KalkulatorTeaser lang={lang} />

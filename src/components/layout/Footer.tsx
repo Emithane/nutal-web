@@ -1,9 +1,10 @@
 import Link from "next/link";
 import styles from "./Footer.module.css";
+import { KONTAKT } from "@/lib/content/kontakt";
 
 /**
  * §3.1.9 — 4 kolone: portali / resursi / kompanija / kontakt+adresa.
- * Telefon i email NE izmišljamo — dodaju se kad klijent dostavi (§5.2).
+ * Kontakt podaci iz src/lib/content/kontakt.ts (dostavio klijent, sedmica 2).
  */
 export default function Footer({ lang }: { lang: string }) {
   const p = (path: string) => `/${lang}${path}`;
@@ -55,12 +56,17 @@ export default function Footer({ lang }: { lang: string }) {
           <div>
             <div className={styles.colTitle}>NUTAL d.o.o.</div>
             <address className={styles.address}>
-              Tvornica boja i lakova
+              {KONTAKT.djelatnost}
               <br />
-              Počulica bb, 72250 Vitez
+              {KONTAKT.adresa}, {KONTAKT.grad}
               <br />
-              Bosna i Hercegovina
+              {KONTAKT.drzava}
             </address>
+            <div className={styles.kontaktLinije}>
+              <a href={KONTAKT.telefonHref} className={styles.colLink}>{KONTAKT.telefon}</a>
+              <br />
+              <a href={KONTAKT.emailHref} className={styles.colLink}>{KONTAKT.email}</a>
+            </div>
           </div>
         </div>
 

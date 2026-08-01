@@ -1,8 +1,8 @@
-import UPripremi from "@/components/ui/UPripremi";
+import PortalPage from "@/components/portal/PortalPage";
 
-export const metadata = { title: "Flooring portal — NUTAL" };
+export const metadata = { title: "Podni sistemi — NUTAL" };
 
 export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
-  return <UPripremi lang={lang} naslov="Flooring portal" opis="Epoksidni i poliuretanski podni sistemi, sloj po sloj. Stranica se gradi ove sedmice." />;
+  return <PortalPage lang={lang} slug="flooring" />;
 }

@@ -1,8 +1,8 @@
-import UPripremi from "@/components/ui/UPripremi";
+import PortalPage from "@/components/portal/PortalPage";
 
-export const metadata = { title: "Industry portal — NUTAL" };
+export const metadata = { title: "Portal za profesionalce — NUTAL" };
 
 export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
-  return <UPripremi lang={lang} naslov="Industry portal" opis="Antikorozivna zaštita, ceste i signalizacija, industrijsko drvo. Stranica se gradi ove sedmice." />;
+  return <PortalPage lang={lang} slug="industry" />;
 }

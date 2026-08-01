@@ -12,6 +12,7 @@
 .colList { list-style: none; display: flex; flex-direction: column; gap: 10px; }
 .colLink { color: var(--nutal-bijela); opacity: 0.9; font-size: 15px; }
 .colLink:hover { opacity: 1; }
+.kontaktLinije { margin-top: var(--space-1); font-size: 14px; }
 .address { font-style: normal; font-size: 15px; line-height: 1.8; opacity: 0.9; }
 .bottom {
   display: flex;

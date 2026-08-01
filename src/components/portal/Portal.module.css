@@ -1,0 +1,109 @@
+/* ---------- hero portala ---------- */
+.hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: var(--nutal-bijela);
+}
+.heroScrim { position: absolute; inset: 0; background: rgba(20, 26, 16, 0.58); }
+.heroInner {
+  position: relative;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-3) var(--space-5);
+}
+.etiketa {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  opacity: 0.9;
+}
+.naslov {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(36px, 4.5vw, 56px);
+  letter-spacing: 0.2px;
+  margin: var(--space-1) 0;
+  max-width: 720px;
+}
+.lede { font-size: 17px; max-width: 560px; opacity: 0.92; }
+
+/* ---------- explorer ---------- */
+.explorer { max-width: var(--max-width); margin: 0 auto; padding: var(--space-4) var(--space-3) var(--space-6); }
+.filteri { display: flex; flex-direction: column; gap: var(--space-2); }
+.chipRow { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip, .chipOn {
+  font: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 14px;
+  border: 1px solid rgba(20, 26, 16, 0.25);
+  background: transparent;
+  color: var(--nutal-tekst);
+  cursor: pointer;
+  transition: border-color var(--transition), background var(--transition);
+}
+.chip:hover { border-color: var(--nutal-zelena-brend); }
+.chipOn { background: var(--nutal-zelena-tamna); border-color: var(--nutal-zelena-tamna); color: var(--nutal-bijela); }
+.chipNum { font-family: var(--font-mono); font-size: 11px; opacity: 0.65; margin-left: 4px; }
+.filterDno { display: flex; gap: var(--space-2); align-items: center; flex-wrap: wrap; justify-content: space-between; }
+.trazi {
+  font: inherit;
+  font-size: 14px;
+  padding: 10px 14px;
+  border: 1px solid rgba(20, 26, 16, 0.25);
+  background: var(--nutal-bijela);
+  min-width: 300px;
+}
+.trazi:focus { outline: 2px solid var(--nutal-zelena-brend); outline-offset: -1px; }
+.brojac {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: rgba(20, 26, 16, 0.55);
+  margin: var(--space-3) 0 var(--space-2);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+.reset { font: inherit; font-size: 13px; border: 0; background: none; color: var(--nutal-zelena); cursor: pointer; }
+.prazno { color: rgba(20, 26, 16, 0.65); padding: var(--space-4) 0; max-width: 460px; }
+
+/* ---------- grid kartica ---------- */
+.grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(20, 26, 16, 0.12);
+  border: 1px solid rgba(20, 26, 16, 0.12);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: var(--nutal-bijela);
+  padding: var(--space-3);
+  height: 100%;
+  transition: background var(--transition);
+}
+.card:hover { background: var(--nutal-pistacija); }
+.cardKat {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--nutal-zelena);
+}
+.cardIme { font-family: var(--font-serif); font-size: 22px; letter-spacing: 0.2px; }
+.cardTagline { font-size: 13px; color: rgba(20, 26, 16, 0.65); }
+.cardTags { font-family: var(--font-mono); font-size: 11px; color: rgba(20, 26, 16, 0.45); margin-top: auto; padding-top: 8px; }
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+  .trazi { min-width: 0; width: 100%; }
+  .heroInner { padding-top: var(--space-4); }
+}

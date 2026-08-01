@@ -140,6 +140,16 @@ export function getDisplayCategories(): DisplayCategory[] {
   return DEFS.map(({ def, match }) => ({ ...def, count: ALL.filter(match).length }));
 }
 
+/** ID prikazne kategorije za jedan proizvod (prvi pogodak) — za portalne filtere. */
+export function getDisplayCategoryId(p: Product): string {
+  return DEFS.find(({ match }) => match(p))?.def.id ?? "ostalo";
+}
+
+/** Naziv prikazne kategorije po ID-u. */
+export function displayCategoryName(id: string): string {
+  return DEFS.find((d) => d.def.id === id)?.def.naziv ?? "Ostalo";
+}
+
 /** Statistike za homepage (§3.1.6). Sve izračunato — ništa hardkodirano. */
 export function getHomeStats() {
   const tehnologije = new Set(

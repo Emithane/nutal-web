@@ -150,6 +150,19 @@ export function displayCategoryName(id: string): string {
   return DEFS.find((d) => d.def.id === id)?.def.naziv ?? "Ostalo";
 }
 
+/** Povezani proizvodi: ista potkategorija ima prednost, dopuna iz iste
+ *  kategorije; deterministički redoslijed (katalog), bez samog proizvoda. */
+export function getRelatedProducts(slug: string, n = 3): Product[] {
+  const base = ALL.find((p) => p.slug === slug);
+  if (!base) return [];
+  const ostali = ALL.filter((p) => p.slug !== slug);
+  const istaPotkat = ostali.filter((p) => p.potkategorija === base.potkategorija);
+  const istaKat = ostali.filter(
+    (p) => p.kategorija === base.kategorija && p.potkategorija !== base.potkategorija
+  );
+  return [...istaPotkat, ...istaKat].slice(0, n);
+}
+
 /** Statistike za homepage (§3.1.6). Sve izračunato — ništa hardkodirano. */
 export function getHomeStats() {
   const tehnologije = new Set(

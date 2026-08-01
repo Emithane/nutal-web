@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getAllProducts, getProductBySlug } from "@/lib/content/products";
+import { getAllProducts, getProductBySlug, getRelatedProducts } from "@/lib/content/products";
+import { KONTAKT } from "@/lib/content/kontakt";
 import { LOCALES } from "@/lib/i18n";
 import styles from "./page.module.css";
 import type { TehnickiPodaci } from "@/lib/content/products";
@@ -74,7 +75,17 @@ export default async function ProductPage({
         )}
       </nav>
 
-      <h1 className={styles.naslov}>{p.naziv}</h1>
+      {(() => {
+        const [ime, ...rest] = p.naziv.split("—");
+        const tagline = rest.join("—").trim();
+        return (
+          <header className={styles.glava}>
+            <span className={styles.eyebrow}>{p.potkategorija || p.kategorija}</span>
+            <h1 className={styles.naslov}>{ime.trim()}</h1>
+            {tagline && <p className={styles.tagline}>{tagline}</p>}
+          </header>
+        );
+      })()}
       {p.opis && <p className={styles.opis}>{p.opis}</p>}
 
       {osobine.length > 0 && (
@@ -104,9 +115,50 @@ export default async function ProductPage({
         </section>
       )}
 
+      <div className={styles.akcije}>
+        {p.tds && (
+          <a
+            className={styles.solid}
+            href={`${KONTAKT.emailHref}?subject=${encodeURIComponent(`Tehnički list — ${p.internoIme}`)}`}
+          >
+            Zatražite tehnički list
+          </a>
+        )}
+        <a
+          className={styles.quiet}
+          href={`${KONTAKT.emailHref}?subject=${encodeURIComponent(`Pitanje o proizvodu — ${p.internoIme}`)}`}
+        >
+          Trebam stručan savjet
+        </a>
+      </div>
+
+      {(() => {
+        const povezani = getRelatedProducts(p.slug);
+        if (povezani.length === 0) return null;
+        return (
+          <section className={styles.povezaniSekcija}>
+            <h2 className={styles.povezaniNaslov}>Iz iste porodice</h2>
+            <ul className={styles.povezaniGrid}>
+              {povezani.map((r) => {
+                const [ime, ...rest] = r.naziv.split("—");
+                return (
+                  <li key={r.slug}>
+                    <Link href={`/${lang}/proizvodi/${r.slug}`} className={styles.povezaniCard}>
+                      <span className={styles.povezaniKat}>{r.potkategorija || r.kategorija}</span>
+                      <span className={styles.povezaniIme}>{ime.trim()}</span>
+                      <span className={styles.povezaniTag}>{rest.join("—").trim()}</span>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+        );
+      })()}
+
       <p className={styles.napomena}>
-        Kompletna stranica proizvoda — sa fotografijom, TDS/SDS dokumentima i
-        uputstvom za upotrebu — je u pripremi.
+        Fotografija proizvoda i dokumenti za preuzimanje su u pripremi — do
+        tada tehnički list šaljemo na email, obično isti radni dan.
       </p>
     </main>
   );

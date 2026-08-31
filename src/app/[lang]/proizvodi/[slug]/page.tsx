@@ -30,9 +30,9 @@ const TEH_LABELE: { key: keyof TehnickiPodaci; label: string }[] = [
   { key: "potrosnja", label: "Potrošnja" },
   { key: "razrjedjivanje", label: "Razrjeđivanje" },
   { key: "nanosenje", label: "Nanošenje" },
-  { key: "susenjeDodir", label: "Sušenje (na dodir)" },
-  { key: "susenjeMedjusloj", label: "Sušenje (međusloj)" },
-  { key: "susenjePotpuno", label: "Sušenje (potpuno)" },
+  { key: "susenjeDodir", label: "Sušenje na dodir" },
+  { key: "susenjeMedjusloj", label: "Međuslojno sušenje" },
+  { key: "susenjePotpuno", label: "Potpuno sušenje" },
   { key: "primjena", label: "Primjena" },
 ];
 

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getLatestTutorials, getTutorialBySlug } from "@/lib/content/tutorials";
 import { PHOTOS } from "@/lib/content/interimPhotos";
 import { LOCALES } from "@/lib/i18n";
+import { displayCategoryIdByName } from "@/lib/content/products";
 import styles from "./page.module.css";
 
 /**
@@ -36,6 +37,9 @@ export default async function TutorialPage({
   if (!t) notFound();
   const imaSadrzaj = (t.koraci && t.koraci.length > 0) || (t.sekcije && t.sekcije.length > 0);
   const portalSlug = t.portal === "Industry" ? "industry" : t.portal === "Flooring" ? "flooring" : "diy";
+  // "Proizvodi za ovaj posao" = portal već filtriran na kategoriju tutorijala
+  const katId = displayCategoryIdByName(t.kategorija);
+  const portalHref = `/${lang}/${portalSlug}${katId ? `?kat=${katId}` : ""}#proizvodi`;
 
   return (
     <main className={styles.wrap}>
@@ -119,7 +123,7 @@ export default async function TutorialPage({
         <Link href={`/${lang}/tutorijali`} className={styles.nazad}>
           ← Svi tutorijali
         </Link>
-        <Link href={`/${lang}/${portalSlug}`} className={styles.portalLink}>
+        <Link href={portalHref} className={styles.portalLink}>
           Proizvodi za ovaj posao →
         </Link>
       </div>

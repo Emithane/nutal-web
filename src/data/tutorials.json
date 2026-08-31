@@ -8,13 +8,14 @@
     "fotoKey": "tutorialInterior",
     "uvod": "Dobro obojen zid se ne prepoznaje po zadnjem sloju, nego po svemu što mu je prethodilo. Ovaj vodič prolazi cijeli posao redom — od pripreme prostorije do skidanja krep trake — sa vremenima kada treba stati i sačekati.",
     "treba": [
-      "Disperzivna boja za unutrašnje zidove (količinu izračunajte kalkulatorom potrošnje)",
-      "Temeljni premaz (grund) za upijajuće i krpljene podloge",
-      "Masa za krpljenje (git) i špahtla",
+      "Disperzivna boja za unutrašnje zidove",
+      "Temeljni premaz za upijajuće i krpljene podloge",
+      "Masa za krpljenje i špahtla",
       "Brusni papir granulacije 120–150",
       "Valjak srednje dužine dlake, mrežica za cijeđenje i teleskopska drška",
       "Četka za uglove i ivice",
-      "Krep traka, folija za pod i namještaj"
+      "Krep traka, folija za pod i namještaj",
+      "Za količine — naš kalkulator potrošnje"
     ],
     "koraci": [
       {
@@ -27,7 +28,7 @@
       },
       {
         "naslov": "Pokrpite oštećenja",
-        "tekst": "Pukotine i rupe od tipli popunite gitom. Šire pukotine krpite u dva prolaza — masa se pri sušenju skuplja, pa jedan prolaz ostavi udubljenje. Pustite da se potpuno osuši prije brušenja."
+        "tekst": "Pukotine i rupe od tipli popunite masom za krpljenje. Šire pukotine krpite u dva prolaza — masa se pri sušenju skuplja, pa jedan prolaz ostavi udubljenje. Pustite da se potpuno osuši prije brušenja."
       },
       {
         "naslov": "Izbrusite u ravan",
@@ -35,7 +36,7 @@
       },
       {
         "naslov": "Nanesite temeljni premaz",
-        "tekst": "Grundirajte cijelu površinu, obavezno preko krpljenih mjesta. Bez temeljnog premaza podloga upija nejednako, pa boja ostavlja mrlje i razlike u sjaju koje se vide tek kad je kasno. Ovo je korak koji se najčešće preskače — i najčešće skupo plati. Poštujte vrijeme sušenja sa ambalaže."
+        "tekst": "Nanesite temeljni premaz na cijelu površinu, obavezno preko krpljenih mjesta. Bez temeljnog premaza podloga upija nejednako, pa boja ostavlja mrlje i razlike u sjaju koje se vide tek kad je kasno. Ovo je korak koji se najčešće preskače — i najčešće skupo plati. Poštujte vrijeme sušenja sa ambalaže."
       },
       {
         "naslov": "Uglove i ivice uradite četkom",
@@ -78,7 +79,8 @@
       "Brusni papir za matiranje zdravih starih premaza",
       "Sredstvo za odmašćivanje ili razrjeđivač i čiste krpe koje ne puštaju dlačice",
       "Zaštitne rukavice i naočale",
-      "Antikorozivna temeljna boja za metal ili 3 u 1 premaz (količinu izračunajte kalkulatorom potrošnje)"
+      "Antikorozivna temeljna boja za metal ili 3 u 1 premaz",
+      "Za količine — naš kalkulator potrošnje"
     ],
     "koraci": [
       {
@@ -134,12 +136,13 @@
     "fotoKey": "flooringEpoxy",
     "uvod": "Epoksid ne prašta improvizaciju: beton ispod njega mora biti suh, čvrst i čist, a dvije komponente izmiješane tačno po omjeru. Skoro sve reklamacije na epoksidne podove počinju u podlozi, ne u materijalu. Ovaj vodič prolazi ugradnju u garaži korak po korak — sa testovima prije kojih se ne kreće dalje.",
     "treba": [
-      "Dvokomponentni epoksidni sistem: temelj i završni premaz (količine izračunajte kalkulatorom potrošnje)",
+      "Dvokomponentni epoksidni sistem: temelj i završni premaz",
       "Bušilica sa mješačem i čista posuda za prelivanje smjese",
       "Valjak kratke dlake otporan na rastvarače, sa produžnom drškom",
       "Masa za popravku betona i špahtla",
       "Brusni papir ili brusilica za beton, usisivač",
-      "Komad PVC folije oko 50×50 cm i ljepljiva traka za test vlage"
+      "Komad PVC folije oko 50×50 cm i ljepljiva traka za test vlage",
+      "Za količine — naš kalkulator potrošnje"
     ],
     "koraci": [
       {
@@ -246,12 +249,12 @@
         "tekst": "Garaža je prvi kandidat: ulje i tečnosti iz auta se obrišu krpom umjesto da uđu u beton, a gume ne ostavljaju prašnjave tragove po kući. Zatim podrum i ostava — pod se više ne praši, čišćenje je posao od dvije minute, a svijetli pod digne cijelu prostoriju. I radionica, gdje pod trpi alat, udarce i hemiju."
       },
       {
-        "naslov": "Šta znači 'sistem' (i zašto ne postoji jedna kanta za sve)",
-        "tekst": "Podni premaz je sendvič. Donji sloj — grundir — upija se u beton i pravi vezu; završni sloj je onaj koji trpi točkove, udarce i hemiju. Svaki radi svoj posao i zato ih ne može zamijeniti jedna kanta. U našoj ponudi epoksidna familija se zove Duronut (grundir 542, međusloj 570 za veće debljine, završni 575), a poliuretanska Emithane. Za garažu je najčešće dovoljno: grundir plus završni sloj."
+        "naslov": "Šta znači 'sistem'",
+        "tekst": "Podni premaz je sendvič. Donji sloj — grundir — upija se u beton i pravi vezu; završni sloj je onaj koji trpi točkove, udarce i hemiju. Svaki radi svoj posao i zato ih ne može zamijeniti jedna kanta. U našoj ponudi epoksidna familija se zove Duronut, a poliuretanska Emithane. Za garažu je najčešće dovoljno: grundir plus završni sloj."
       },
       {
         "naslov": "Epoksid ili poliuretan?",
-        "tekst": "Epoksid je tvrđi i standard je za garaže i radionice u zatvorenom. Poliuretan (PU) je elastičniji i stabilniji na suncu — tamo gdje svjetlo pada direktno, epoksid vremenom žuti, PU ne. Zato se često kombinuju: epoksidna osnova, PU završni sloj tamo gdje se traži postojanost boje ili malo mekši gaz. Ako niste sigurni — to je tačno ono pitanje za koje postoji naša tehnička podrška."
+        "tekst": "Epoksid je tvrđi i standard je za garaže i radionice u zatvorenom. Poliuretan je elastičniji i stabilniji na suncu — tamo gdje svjetlo pada direktno, epoksid vremenom žuti, poliuretan ne. Zato se često kombinuju: epoksidna osnova, poliuretanski završni sloj tamo gdje se traži postojanost boje ili malo mekši gaz. Ako niste sigurni — to je tačno ono pitanje za koje postoji naša tehnička podrška."
       },
       {
         "naslov": "Šta epoksid ne prašta",

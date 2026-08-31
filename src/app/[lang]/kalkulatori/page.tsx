@@ -24,8 +24,8 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
       </header>
       <KalkulatorPotrosnje lang={lang} proizvodi={proizvodi} />
       <p className={styles.fusnota}>
-        U kalkulatoru su proizvodi sa objavljenom izdašnošću ({proizvodi.length}{" "}
-        za sada). Za ostale nam{" "}
+        U kalkulatoru su proizvodi sa objavljenom izdašnošću — za sada{" "}
+        {proizvodi.length}. Za ostale nam{" "}
         <Link href={`/${lang}/kontakt`}>pošaljite upit</Link> — podatke
         dopunjavamo iz tehničkih listova.
       </p>

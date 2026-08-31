@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import styles from "./Portal.module.css";
 
@@ -36,6 +36,14 @@ export default function ProductExplorer({
   const [komp, setKomp] = useState<string>("sve");
   const [q, setQ] = useState("");
 
+  /* Dolazak iz tutorijala: ?kat=drvo → portal otvoren već filtriran.
+     Jednokratna sinhronizacija sa URL-om na mountu (spoljni sistem). */
+  useEffect(() => {
+    const k = new URLSearchParams(window.location.search).get("kat");
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    if (k && items.some((it) => it.kat === k)) setKat(k);
+  }, [items]);
+
   const kategorije = useMemo(() => {
     const m = new Map<string, { naziv: string; count: number }>();
     for (const it of items) {
@@ -68,7 +76,7 @@ export default function ProductExplorer({
   const aktivan = kat !== "sve" || komp !== "sve" || q.trim() !== "";
 
   return (
-    <div className={styles.explorer}>
+    <div className={styles.explorer} id="proizvodi">
       <div className={styles.filteri}>
         <div className={styles.chipRow} role="group" aria-label="Kategorija">
           <button

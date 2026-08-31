@@ -145,6 +145,11 @@ export function getDisplayCategoryId(p: Product): string {
   return DEFS.find(({ match }) => match(p))?.def.id ?? "ostalo";
 }
 
+/** ID prikazne kategorije po nazivu (npr. "Drvo" → "drvo"). */
+export function displayCategoryIdByName(naziv: string): string | undefined {
+  return DEFS.find((d) => d.def.naziv === naziv)?.def.id;
+}
+
 /** Naziv prikazne kategorije po ID-u. */
 export function displayCategoryName(id: string): string {
   return DEFS.find((d) => d.def.id === id)?.def.naziv ?? "Ostalo";

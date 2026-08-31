@@ -10,6 +10,8 @@ import styles from "./Portal.module.css";
  * trivijalno za browser. Početno stanje (bez filtera) je prerenderovano,
  * pa sadržaj postoji i bez JavaScripta.
  */
+const KAT_RED = ["metal", "drvo", "zid", "podovi", "ceste", "pomocni"];
+
 export interface ExplorerItem {
   slug: string;
   ime: string;       // dio naziva prije "—"
@@ -41,7 +43,9 @@ export default function ProductExplorer({
       e.count += 1;
       m.set(it.kat, e);
     }
-    return [...m.entries()];
+    return [...m.entries()].sort(
+      ([a], [b]) => KAT_RED.indexOf(a) - KAT_RED.indexOf(b)
+    );
   }, [items]);
 
   const komponente = useMemo(

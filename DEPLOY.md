@@ -1,3 +1,11 @@
+# NUTAL web — deploy
+
+**Živi sajt (Cloudflare Workers):** https://nutal-web.kenan-hajdarevic.workers.dev/bs
+
+**Slanje paketa:** ZIP u `1-download/` u radnom folderu → dupli klik na `posalji.command` (skripta raspakuje, ogleda u `nutal-web`, commit + push). Cloudflare gradi ~2 min.
+
+---
+
 # Sedmica 1 — od ZIP-a do živog linka na Cloudflareu (korak po korak)
 
 Cilj dana: vidjeti privremeni URL koji radi. Ništa više.

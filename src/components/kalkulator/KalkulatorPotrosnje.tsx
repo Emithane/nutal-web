@@ -65,7 +65,9 @@ export default function KalkulatorPotrosnje({
             {grupe.map(([kat, lista]) => (
               <optgroup key={kat} label={kat}>
                 {lista.map((x) => (
-                  <option key={x.slug} value={x.slug}>{x.ime}</option>
+                  <option key={x.slug} value={x.slug}>
+                    {x.tagline ? `${x.ime} — ${x.tagline}` : x.ime}
+                  </option>
                 ))}
               </optgroup>
             ))}

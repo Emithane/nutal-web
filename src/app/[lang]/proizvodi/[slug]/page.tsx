@@ -112,6 +112,13 @@ export default async function ProductPage({
               ))}
             </tbody>
           </table>
+          {p.tehnicki.potrosnja && (
+            <p className={styles.kalkLink}>
+              <Link href={`/${lang}/kalkulatori?proizvod=${p.slug}`}>
+                Izračunajte potrošnju za ovaj proizvod →
+              </Link>
+            </p>
+          )}
         </section>
       )}
 

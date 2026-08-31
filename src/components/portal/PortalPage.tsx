@@ -5,6 +5,7 @@ import {
   displayCategoryName,
 } from "@/lib/content/products";
 import ProductExplorer, { type ExplorerItem } from "./ProductExplorer";
+import PortalTutorijali from "./PortalTutorijali";
 import styles from "./Portal.module.css";
 
 /** Server dio portala: hero + izrezani podaci za klijentski explorer. */
@@ -40,6 +41,7 @@ export default function PortalPage({ lang, slug }: { lang: string; slug: string 
         </div>
       </section>
       <ProductExplorer lang={lang} items={items} />
+      <PortalTutorijali lang={lang} slug={slug} />
     </main>
   );
 }

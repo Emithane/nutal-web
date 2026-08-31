@@ -1,0 +1,7 @@
+.wrap { max-width: var(--max-width); margin: 0 auto; padding: var(--space-6) var(--space-3); min-height: 55vh; }
+.head { max-width: 640px; margin-bottom: var(--space-4); }
+.eyebrow { font-family: var(--font-mono); font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 1.2px; color: var(--nutal-zelena); }
+.naslov { font-family: var(--font-serif); font-weight: 400; font-size: clamp(36px, 5vw, 54px); letter-spacing: 0.2px; margin: var(--space-1) 0; }
+.lede { font-size: 17px; line-height: 1.6; color: rgba(20, 26, 16, 0.75); }
+.fusnota { font-size: 13px; color: rgba(20, 26, 16, 0.55); margin-top: var(--space-4); }
+.fusnota a { color: var(--nutal-zelena); }

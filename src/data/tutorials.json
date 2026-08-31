@@ -1,19 +1,129 @@
 [
   {
-    "slug": "bojenje-interijera-od-a-do-z",
-    "naslov": "Bojenje interijera od A do Ž",
+    "slug": "bojenje-enterijera-od-a-do-z",
+    "naslov": "Bojenje enterijera od A do Ž",
     "kategorija": "Zid i fasada",
     "portal": "DIY",
     "sazetak": "Krpljenje, brušenje, grundiranje i dva sloja disperzije — redoslijed koji sprječava mrlje i vidljive tragove valjka.",
-    "fotoKey": "tutorialInterior"
+    "fotoKey": "tutorialInterior",
+    "uvod": "Dobro obojen zid se ne prepoznaje po zadnjem sloju, nego po svemu što mu je prethodilo. Ovaj vodič prolazi cijeli posao redom — od pripreme prostorije do skidanja krep trake — sa vremenima kada treba stati i sačekati.",
+    "treba": [
+      "Disperzivna boja za unutrašnje zidove (količinu izračunajte kalkulatorom potrošnje)",
+      "Temeljni premaz (grund) za upijajuće i krpljene podloge",
+      "Masa za krpljenje (git) i špahtla",
+      "Brusni papir granulacije 120–150",
+      "Valjak srednje dužine dlake, mrežica za cijeđenje i teleskopska drška",
+      "Četka za uglove i ivice",
+      "Krep traka, folija za pod i namještaj"
+    ],
+    "koraci": [
+      {
+        "naslov": "Pregledajte zid prije kupovine",
+        "tekst": "Pređite dlanom preko površine. Ako na ruci ostaje bijeli prah, stari premaz se osipa — takva podloga se prvo sanira. Potražite pukotine, rupe od tipli, masne mrlje i tragove vlage. Ako je vlage bilo, prvo pronađite i otklonite njen uzrok: zid se ne boji dok nije potpuno suh. Boja neće sakriti problem koji je ostao ispod nje."
+      },
+      {
+        "naslov": "Zaštitite prostoriju",
+        "tekst": "Namještaj na sredinu sobe i pod foliju. Krep trakom oblijepite lajsne, štokove, prekidače i utičnice. Ako na zidu ima masnoće ili tragova dima, operite ga i pustite da se potpuno osuši. Pet minuta pripreme štedi sat čišćenja."
+      },
+      {
+        "naslov": "Pokrpite oštećenja",
+        "tekst": "Pukotine i rupe od tipli popunite gitom. Šire pukotine krpite u dva prolaza — masa se pri sušenju skuplja, pa jedan prolaz ostavi udubljenje. Pustite da se potpuno osuši prije brušenja."
+      },
+      {
+        "naslov": "Izbrusite u ravan",
+        "tekst": "Pokrpljena mjesta brusite papirom 120–150 dok se dlanom ne osjeti ravan prelaz — ruka otkrije ono što oko preskoči. Na kraju obrišite prašinu suhom krpom; boja ne voli prašnjavu podlogu."
+      },
+      {
+        "naslov": "Nanesite temeljni premaz",
+        "tekst": "Grundirajte cijelu površinu, obavezno preko krpljenih mjesta. Bez temeljnog premaza podloga upija nejednako, pa boja ostavlja mrlje i razlike u sjaju koje se vide tek kad je kasno. Ovo je korak koji se najčešće preskače — i najčešće skupo plati. Poštujte vrijeme sušenja sa ambalaže."
+      },
+      {
+        "naslov": "Uglove i ivice uradite četkom",
+        "tekst": "Četkom povucite pojas od 5–8 cm uz plafon, štokove i utičnice — ali samo u zoni koju odmah nastavljate valjkom, da se spoj radi mokro na mokro. Ako pojas presuši, spoj će se vidjeti."
+      },
+      {
+        "naslov": "Prvi sloj valjkom",
+        "tekst": "Valjak ocijedite na mrežici — natopljen, a ne kapljući. Nanosite u obliku slova W pa popunite polje, od vrha prema dnu, bez jakog pritiska. Jedan zid radite bez pauze, od ugla do ugla, i ne vraćajte se po dijelu koji se već počeo sušiti — upravo tako nastaju prelazi i tamnije mrlje."
+      },
+      {
+        "naslov": "Sačekajte, pa drugi sloj",
+        "tekst": "Poštujte međuslojno sušenje sa ambalaže — prerani drugi sloj čupa prvi. Dva tanka i ravnomjerna sloja daju puniji i mirniji zid od jednog predebelog. Drugi sloj nanosite unakrsno u odnosu na prvi, a završne poteze vucite u istom smjeru, prema svjetlu prozora. Prozračivanje je dobro, ali bez promaje i naglog zagrijavanja dok se boja suši."
+      },
+      {
+        "naslov": "Skinite traku na vrijeme",
+        "tekst": "Krep traku skidajte dok je zadnji sloj još blago vlažan, povlačeći polako pod uglom — tako rub ostaje čist. Ako je boja već osušila, ivicu trake prvo zarežite skalpelom da ne povuče film sa zida."
+      }
+    ],
+    "greske": [
+      "Bojenje preko vlažnog zida ili neotklonjene vlage — problem se vrati kroz novi sloj.",
+      "Preskočen temeljni premaz — nejednako upijanje, mrlje i razlike u sjaju.",
+      "Suh valjak — ostavlja 'suhe' tragove i nepokrivena mjesta.",
+      "Drugi sloj prije isteka međuslojnog sušenja — čupanje i rolanje prvog sloja.",
+      "Bojenje na promaji ili direktnom suncu — boja se suši prebrzo i vide se nastavci.",
+      "Dvije kante različitih šarži bez međusobnog miješanja — moguća razlika u nijansi na istom zidu."
+    ],
+    "zakljucak": "Dobar rezultat ne dolazi iz žurbe. Kada su podloga, alat i redoslijed slojeva na svom mjestu, bojenje enterijera postane jednostavan posao — a zid izgleda mirno, ravno i upravo onako kako ste zamislili."
   },
   {
     "slug": "priprema-metala-prije-premaza",
-    "naslov": "Priprema metala prije antikorozivnog premaza",
+    "naslov": "Priprema i zaštita metala od hrđe",
     "kategorija": "Metal i antikorozija",
-    "portal": "Industry",
-    "sazetak": "Korozija, masnoća i stara boja skraćuju vijek svakog premaza. Šta se skida, čime, i kada je podloga spremna za temelj.",
-    "fotoKey": "industrySteel"
+    "portal": "DIY",
+    "sazetak": "Hrđa, masnoća i stara boja skraćuju vijek svakog premaza. Šta se skida, čime, i kojim redom se gradi zaštita — od čišćenja do završnog sloja.",
+    "fotoKey": "industrySteel",
+    "uvod": "Hrđu nije dovoljno prebojiti. Ako ostane ispod premaza, nastavlja raditi svoj posao — polako podiže boju, širi se ispod nje i vrati vas na početak. Dobra vijest: većina ograda, kapija i nosača ne traži komplikovan postupak. Traži red — prvo očistiti, zatim pripremiti, pa tek onda zaštititi.",
+    "treba": [
+      "Strugač ili špahtla za staru boju",
+      "Žičana četka ili brusilica sa žičanim diskom",
+      "Brusni papir za matiranje zdravih starih premaza",
+      "Sredstvo za odmašćivanje ili razrjeđivač i čiste krpe koje ne puštaju dlačice",
+      "Zaštitne rukavice i naočale",
+      "Antikorozivna temeljna boja za metal ili 3 u 1 premaz (količinu izračunajte kalkulatorom potrošnje)"
+    ],
+    "koraci": [
+      {
+        "naslov": "Procijenite stanje površine",
+        "tekst": "Nije svaka hrđa ista: negdje je tek tanak narandžasti trag, negdje je već nagrizla metal i podigla stari premaz. Posebno pogledajte zavare, spojeve, donje rubove kapije, mjesta iza šarki i dijelove na kojima se zadržava voda — tu hrđa najčešće počinje, a primijeti se tek kada uzme maha. I jedno pravilo koje važi uvijek: boja preko hrđe ne zaustavlja hrđu, samo je sakrije na neko vrijeme."
+      },
+      {
+        "naslov": "Skinite boju koja se odvaja",
+        "tekst": "Strugačem i žičanom četkom uklonite svu boju koja se ljušti, podiže ili se pod pritiskom špahtle lako odvaja — novi premaz će se držati samo onoliko koliko se drži stari. Zdrav, čvrsto prionjen stari premaz može ostati, ali mu brusnim papirom matirajte sjaj, da se novi sloj ima za šta uhvatiti."
+      },
+      {
+        "naslov": "Uklonite hrđu do zdravog metala",
+        "tekst": "Žičanom četkom ili brusilicom skidajte rastresitu hrđu dok se ne pokaže čvrst metal — ono što možete podići špahtlom, podignuće i novi premaz. Prelaze između starog premaza i golog metala ublažite brusnim papirom, da se rub ne ocrta kroz završni sloj. Ako je površina velika ili je korozija duboka, stanite i procijenite: takav posao traži mašinsku pripremu — javite nam se prije nego što se problem samo privremeno prikrije."
+      },
+      {
+        "naslov": "Obradite ivice i zavare",
+        "tekst": "Oštre ivice, kapljice zavara i prskotine obrusite — na oštroj ivici film boje je najtanji i tu zaštita prva popusti. Nekoliko minuta brušenja produžava vijek premaza više nego dodatni sloj boje."
+      },
+      {
+        "naslov": "Odmastite površinu",
+        "tekst": "Metal može izgledati čisto, a nositi masnoću od mašina, ulja i ruku koja ne pušta premaz do podloge. Poslije brušenja uklonite prašinu, pa cijelu površinu prebrišite sredstvom za odmašćivanje — mijenjajte krpe dok ne ostanu čiste, prljavom krpom masnoću samo razmazujete. Očišćenu površinu više ne dirajte golim rukama. Ovaj korak se ne vidi kada je posao završen, ali se itekako vidi kada se preskoči."
+      },
+      {
+        "naslov": "Provjerite suhoću i rosu",
+        "tekst": "Površina prije temelja mora biti čista i potpuno suha. Pazite na kondenzaciju: ako je metal hladniji od zraka, na njemu se hvata rosa koju oko slabo vidi, a temelj preko nje ne drži. Metal užaren od sunca jednako je loša podloga — birajte dan bez kiše, magle i velikih temperaturnih skokova."
+      },
+      {
+        "naslov": "Odaberite sistem i krenite isti dan",
+        "tekst": "Očišćen čelik počinje ponovo hrđati za nekoliko sati, na otvorenom i brže — pa premaz nanesite isti dan. Puteva ima dva. Klasični sistem: antikorozivni temelj, pa završni slojevi. Ili premaz 3 u 1, koji u jednom proizvodu spaja prajmer, međusloj i završni sloj i ide direktno na metal — u našoj ponudi to su Fadalin 3u1 i Nidalin 3u1. Jedno ne mijenja ništa: priprema iz prethodnih koraka važi jednako za oba — 'direktno na metal' ne znači direktno na masnoću i rastresitu hrđu. U oba slučaja nanosite ravnomjerno, s posebnom pažnjom na rubove, zavare i spojeve: tu film najlakše ostane pretanak, a voda najlakše pronađe put."
+      },
+      {
+        "naslov": "Dogradite završne slojeve",
+        "tekst": "Kod klasičnog sistema, kada se temelj osuši prema uputstvu, dolazi završni premaz — on daje izgled, ali je i vanjski štit sistema od sunca, kiše i svakodnevnog korištenja. Kod 3 u 1 premaza isti proizvod gradi i zaštitu i izgled — u broju slojeva sa ambalaže. U oba slučaja: dva tanka, ravnomjerna sloja bolja su od jednog debelog, koji se sporije suši, lakše napravi tragove, a ne znači bolju zaštitu."
+      }
+    ],
+    "greske": [
+      "Bojenje preko ljuskave hrđe — premaz se podigne zajedno s njom.",
+      "Preskočeno odmašćivanje — film se odvaja u komadima, često tek poslije prve zime.",
+      "Diranje očišćene površine golim rukama — otisak masnoće ostane pod bojom.",
+      "Predugo čekanje između čišćenja i temelja — svježa hrđa se vrati preko noći.",
+      "Bojenje užarenog, orošenog ili hladnog metala sa kondenzacijom — premaz ne prione kako treba.",
+      "Jedan debeo sloj umjesto dva tanka — sporije sušenje, tragovi, a ne i bolja zaštita.",
+      "Obična završna boja bez temelja — sjaji, ali ne štiti. Izuzetak su premazi projektovani kao 3 u 1, koji funkciju temelja nose u sebi."
+    ],
+    "zakljucak": "Red je jednostavan: skinite rastresito, očistite i odmastite, pa nanesite temelj i završni sloj — ili 3 u 1 premaz koji ih spaja. Kada red ispoštujete, kapija ili ograda ne izgleda samo svježe obojeno — dobije zaštitu koja ima smisla i ispod površine. A za konstrukcije i veće sisteme, stepen pripreme i izbor premaza definiše tehnički list: tu preuzima naša tehnička podrška."
   },
   {
     "slug": "epoksidni-pod-u-garazi",
@@ -21,6 +131,137 @@
     "kategorija": "Podni sistemi",
     "portal": "Flooring",
     "sazetak": "Od provjere vlage u betonu do završnog sloja — koraci, vremena sušenja između slojeva i najčešće greške.",
-    "fotoKey": "flooringEpoxy"
+    "fotoKey": "flooringEpoxy",
+    "uvod": "Epoksid ne prašta improvizaciju: beton ispod njega mora biti suh, čvrst i čist, a dvije komponente izmiješane tačno po omjeru. Skoro sve reklamacije na epoksidne podove počinju u podlozi, ne u materijalu. Ovaj vodič prolazi ugradnju u garaži korak po korak — sa testovima prije kojih se ne kreće dalje.",
+    "treba": [
+      "Dvokomponentni epoksidni sistem: temelj i završni premaz (količine izračunajte kalkulatorom potrošnje)",
+      "Bušilica sa mješačem i čista posuda za prelivanje smjese",
+      "Valjak kratke dlake otporan na rastvarače, sa produžnom drškom",
+      "Masa za popravku betona i špahtla",
+      "Brusni papir ili brusilica za beton, usisivač",
+      "Komad PVC folije oko 50×50 cm i ljepljiva traka za test vlage"
+    ],
+    "koraci": [
+      {
+        "naslov": "Provjerite starost i čvrstoću betona",
+        "tekst": "Nov beton mora odležati najmanje 28 dana prije epoksida. Površina ne smije da se osipa: zagrebite je novčićem ili ekserom — ako se runi i praši, prvo se sanira, pa premazuje."
+      },
+      {
+        "naslov": "Uradite test vlage folijom",
+        "tekst": "Zalijepite foliju trakom za pod, sve četiri strane, i ostavite 24 sata. Kapljice ili tamnija mrlja ispod folije znače vlagu koja se penje iz betona — preko takve podloge epoksid se ne radi dok se vlaga ne riješi. Ovaj test košta jedan dan; preskakanje testa košta cijeli pod."
+      },
+      {
+        "naslov": "Odmastite i operite",
+        "tekst": "U garaži su ulja neprijatelj broj jedan. Stare masne mrlje odmastite i izbrusite — ulje ide u dubinu betona, pa je površinsko brisanje malo. Zatim operite cijeli pod i pustite da se potpuno osuši."
+      },
+      {
+        "naslov": "Ohrapavite površinu i usišite prašinu",
+        "tekst": "Gladak, zaglađen beton brusite dok ne izgubi sjaj — epoksidu treba otvorena pora da se usidri. Svu prašinu pokupite usisivačem; metla je samo razmaže, a prašina ispod premaza znači tačkasto odvajanje kasnije."
+      },
+      {
+        "naslov": "Popravite rupe i pukotine",
+        "tekst": "Udubljenja i pukotine popunite masom za beton, pustite da očvrsne, pa prebrusite u ravan. Epoksid vjerno kopira podlogu — svaka neravnina ostaje vidljiva u završnom sjaju."
+      },
+      {
+        "naslov": "Izmiješajte i nanesite temelj",
+        "tekst": "Komponente A i B miješajte mašinski, tačno u omjeru sa ambalaže — od oka ovdje ne postoji. Izmiješanu smjesu prelijte u čistu posudu i kratko promiješajte ponovo: uz zid kante uvijek ostane neizmiješanog materijala. Miješajte onoliko koliko stignete ugraditi u vremenu upotrebe smjese — smjesa kojoj je isteklo vrijeme ide u otpad, ne na pod."
+      },
+      {
+        "naslov": "Nanesite završni sloj u pravom intervalu",
+        "tekst": "Završni premaz nanosite unutar međuslojnog intervala sa ambalaže: prerano razvlači svjež temelj, prekasno se ne vezuje pa se mora brusiti. Radite valjkom, ravnomjerno, od najdaljeg ugla prema izlazu iz garaže."
+      },
+      {
+        "naslov": "Pustite pod da očvrsne",
+        "tekst": "Vremena za hodanje i za auto stoje na ambalaži — poštujte ih. Epoksid punu tvrdoću gradi danima: auto parkiran prerano ostavlja otiske guma koji se više ne vade."
+      }
+    ],
+    "greske": [
+      "Preskočen test vlage — pod se podigne u mjehurima, obično poslije prve zime.",
+      "Miješanje komponenti od oka — mjestimično neočvrsnut, ljepljiv pod.",
+      "Prekoračeno vrijeme upotrebe smjese — materijal želira u posudi ili se razvlači u grudvama.",
+      "Nanošenje na prašnjav ili mastan beton — tačkasta odvajanja i krateri.",
+      "Auto na podu prije punog očvršćavanja — trajni otisci guma.",
+      "Završni sloj van međuslojnog intervala — slojevi se razdvajaju."
+    ],
+    "zakljucak": "Epoksidni pod se ne kvari odozgo nego odozdo. Kad beton prođe testove — starost, čvrstoću i vlagu — slojevi su najlakši dio posla, a pod izgleda kao izliven iz jednog komada."
+  },
+  {
+    "slug": "lazura-lak-ili-boja-zastita-za-drvo",
+    "naslov": "Lazura, lak ili boja: kako odabrati zaštitu za drvo",
+    "kategorija": "Drvo",
+    "portal": "DIY",
+    "fotoKey": "drvoObojeno",
+    "sazetak": "Godovi vidljivi, puna boja ili glatka završnica — tri puta zaštite drveta, i kako izabrati pravi za ogradu, namještaj i fasadu.",
+    "uvod": "Drvo se mijenja s vremenom: sunce ga posvijetli, kiša natapa, vlaga širi, a suhi dani ponovo stegnu. Zato zaštita drveta nije samo pitanje nijanse — prije proizvoda birate šta od drveta želite. Najjednostavnije pravilo: želite li vidjeti godove, birajte lazuru; želite li drvo potpuno prekriti, birajte boju; želite li prozirnu, glatku završnicu u enterijeru, birajte lak. A svaki od ta tri izbora ima svoje mjesto.",
+    "sekcije": [
+      {
+        "naslov": "Lazura: kada želite da drvo ostane drvo",
+        "tekst": "Lazura štiti drvo, a ne sakriva ga — godovi, prirodna boja i tekstura ostaju vidljivi. Zato je čest izbor za ograde, pergole, nadstrešnice, fasadne obloge i vrtni namještaj. Lazura nije obična boja koja je samo prozirnija: ona prodire u drvo, a pigmenti daju ton i pomažu da sunce manje iscrpljuje površinu. Što je ton puniji, zaštita od sunca je po pravilu izraženija; potpuno prozirna zaštita čuva prirodan izgled, ali vani traži češće održavanje. U našoj ponudi za vani su Amelin i Amelin Gold sa pojačanom UV zaštitom, a za unutrašnje radove Lazur H2O, bez jakog mirisa."
+      },
+      {
+        "naslov": "Zašto je vosak važan",
+        "tekst": "Kod NUTAL lazura vosak je važan dio zaštite: pomaže vodi da ostane na površini u kapima, umjesto da brzo ulazi u drvo. To je presudno na ogradama i pergolama koje stoje na kiši, rosi i jutarnjoj vlazi — kad voda lakše sklizne, drvo manje upija. Vosak ne znači da drvo nikad više neće tražiti održavanje; sunce i kiša i dalje rade svoje. Ali znači da zaštita ima smisla i kada vrijeme nije na vašoj strani."
+      },
+      {
+        "naslov": "Lak: za drvo koje je unutra i stalno u upotrebi",
+        "tekst": "Lak se najčešće bira za unutrašnje površine: namještaj, vrata, police, stolove — sve što se često dodiruje i briše. Za razliku od lazure, lak gradi čvršći završni sloj: uredna, glatka završnica i lakše održavanje, u sjaju, polusjaju ili matu. Ali da bi lak izgledao dobro, drvo mora biti fino pripremljeno — prašina, grubi rubovi i tragovi četke vide se kroz prozirni lak mnogo više nego ispod pokrivne boje. Za vanjsko drvo klasičan lak nije prvi izbor: drvo vani stalno radi, a ako čvrst sloj pukne, voda pronađe put ispod njega. Za vani zato postoji kombinacija — Amelin Lak spaja zaštitu lazure i sjaj laka u jednom sloju."
+      },
+      {
+        "naslov": "Pokrivna boja: nova boja i ujednačen izgled",
+        "tekst": "Pokrivna boja potpuno prekriva godove i prirodnu nijansu. Dobra je kad želite čist, ujednačen izgled — ili kad je drvo već više puta premazivano, pa prirodnu strukturu nema smisla vraćati. Ako je površina neujednačena, sa starim mrljama, popravkama ili različitim komadima drveta, boja sve poveže u jednu cjelinu. Ali boja ne rješava lošu podlogu: premaz koji se ljušti se skida, ispucalo ili trulo drvo se prvo sanira. Nova boja na lošoj podlozi samo neko vrijeme sakriva problem."
+      },
+      {
+        "naslov": "Prije premaza: drvo mora biti spremno",
+        "tekst": "Birali lazuru, lak ili boju — priprema je pola posla. Novo drvo treba biti suho, čisto i bez prašine; grubu površinu lagano obrusite u smjeru godova, da premaz ljepše legne. Kod starog drveta prvo provjerite postojeću zaštitu: šta se ljušti ili odvaja — skida se, oštećena mjesta se obruse i očiste. Posebnu pažnju obratite na krajeve dasaka, rubove, spojeve i donje dijelove ograde — tu drvo najviše upija vlagu i tu zaštita mora biti nanesena najpažljivije."
+      },
+      {
+        "naslov": "Drvo vani traži redovno gledanje",
+        "tekst": "Najviše stradaju površine okrenute suncu, dijelovi koje direktno pogađa kiša i mjesta gdje se voda zadržava. Jednom godišnje pogledajte: da li je ton izgubio ujednačenost, da li voda više ne ostaje u kapima, ima li mjesta gdje drvo sivi ili puca. Pravovremeno obnavljanje je mali posao; skidanje i sanacija poslije nekoliko zapuštenih godina — veliki."
+      }
+    ],
+    "greske": [
+      "Klasičan lak na vanjskoj ogradi — drvo radi, sloj pukne, voda uđe ispod njega.",
+      "Nova boja preko premaza koji se ljušti — drži se onoliko koliko i stari sloj.",
+      "Potpuno prozirna zaštita vani bez redovnog obnavljanja — sunce prvo uzme svoje.",
+      "Zanemareni krajevi dasaka, spojevi i donji rubovi — tačke kroz koje vlaga ulazi.",
+      "Čekanje da zaštita potpuno propadne — obnova tada znači skidanje svega do drveta."
+    ],
+    "zakljucak": "Dobar izbor nije onaj koji najljepše izgleda na polici, nego onaj koji odgovara drvetu, mjestu na kojem stoji i vremenu kojem će biti izloženo. Kada je to pogođeno, drvo ostaje lijepo — i ostaje drvo."
+  },
+  {
+    "slug": "sta-je-epoksidni-pod-i-treba-li-vam",
+    "naslov": "Šta je epoksidni pod i treba li vam",
+    "kategorija": "Podni sistemi",
+    "portal": "Flooring",
+    "fotoKey": "kalkulatorBand",
+    "sazetak": "Bez stručnih izraza: šta je zapravo epoksid, po čemu se razlikuje od obične boje za beton, i kada ima smisla u garaži, podrumu ili radionici.",
+    "uvod": "Betonski pod u garaži ima dvije loše navike: praši se i pije sve što na njega kapne. Premazani pod obje rješava — ali oko riječi 'epoksid' i 'sistem' obično krene stručna magla. Ovaj vodič je bez magle: šta je to, čemu služi i kako da znate treba li vama.",
+    "sekcije": [
+      {
+        "naslov": "Šta je epoksid, najjednostavnije rečeno",
+        "tekst": "Epoksid nije farba, nego dvokomponentni premaz: pomiješate dvije komponente, one se hemijski vežu i stvrdnu u tvrd sloj koji ne upija — i koji je za beton zalijepljen, ne samo namazan preko njega. Obična boja za beton osvježi izgled; epoksidni premaz napravi radnu površinu. To je razlika između 'ofarbano' i 'zaštićeno'."
+      },
+      {
+        "naslov": "Gdje ima smisla u kući",
+        "tekst": "Garaža je prvi kandidat: ulje i tečnosti iz auta se obrišu krpom umjesto da uđu u beton, a gume ne ostavljaju prašnjave tragove po kući. Zatim podrum i ostava — pod se više ne praši, čišćenje je posao od dvije minute, a svijetli pod digne cijelu prostoriju. I radionica, gdje pod trpi alat, udarce i hemiju."
+      },
+      {
+        "naslov": "Šta znači 'sistem' (i zašto ne postoji jedna kanta za sve)",
+        "tekst": "Podni premaz je sendvič. Donji sloj — grundir — upija se u beton i pravi vezu; završni sloj je onaj koji trpi točkove, udarce i hemiju. Svaki radi svoj posao i zato ih ne može zamijeniti jedna kanta. U našoj ponudi epoksidna familija se zove Duronut (grundir 542, međusloj 570 za veće debljine, završni 575), a poliuretanska Emithane. Za garažu je najčešće dovoljno: grundir plus završni sloj."
+      },
+      {
+        "naslov": "Epoksid ili poliuretan?",
+        "tekst": "Epoksid je tvrđi i standard je za garaže i radionice u zatvorenom. Poliuretan (PU) je elastičniji i stabilniji na suncu — tamo gdje svjetlo pada direktno, epoksid vremenom žuti, PU ne. Zato se često kombinuju: epoksidna osnova, PU završni sloj tamo gdje se traži postojanost boje ili malo mekši gaz. Ako niste sigurni — to je tačno ono pitanje za koje postoji naša tehnička podrška."
+      },
+      {
+        "naslov": "Šta epoksid ne prašta",
+        "tekst": "Tri stvari, i sve tri se provjere prije otvaranja kante: vlagu koja se penje kroz beton, mastan ili prašnjav pod, i miješanje komponenti od oka. Nijedna se ne vidi odmah — sve tri se vide poslije prve zime. Kako se provjeravaju i kako se radi cijeli posao, korak po korak, vodi vas naš tutorijal Ugradnja epoksidnog poda u garaži."
+      },
+      {
+        "naslov": "Sami ili sa izvođačem?",
+        "tekst": "Garaža normalne veličine, zdrav i suh beton, vikend vremena i disciplina oko miješanja — to je posao koji možete sami. Velike površine, vlaga u podlozi, podovi koji nose viljuškare i mašine — to je posao za izvođača i za sistem izabran iz tehničkog lista. Granicu je pametno povući prije prve kante, a ne poslije druge."
+      }
+    ],
+    "zakljucak": "Epoksidni pod nije luksuz iz kataloga — to je radna površina koja se ne praši, ne pije i ne stidi se svjetla. Kad znate šta tražite, ostalo je redoslijed."
   }
 ]

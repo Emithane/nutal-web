@@ -1,0 +1,14 @@
+.wrap { max-width: var(--max-width); margin: 0 auto; padding: var(--space-6) var(--space-3); min-height: 55vh; }
+.head { max-width: 640px; margin-bottom: var(--space-4); }
+.eyebrow { font-family: var(--font-mono); font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 1.2px; color: var(--nutal-zelena); }
+.naslov { font-family: var(--font-serif); font-weight: 400; font-size: clamp(36px, 5vw, 54px); letter-spacing: 0.2px; margin: var(--space-1) 0; }
+.lede { font-size: 17px; line-height: 1.6; color: rgba(20, 26, 16, 0.75); }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3); }
+.card { display: flex; flex-direction: column; gap: 6px; }
+.slika { display: block; aspect-ratio: 4 / 3; background-size: cover; background-position: center; border-radius: var(--radius); margin-bottom: var(--space-1); transition: transform var(--transition); }
+.card:hover .slika { transform: translateY(-3px); }
+.kat { font-family: var(--font-mono); font-size: 10px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; color: var(--nutal-zelena); }
+.titl { font-family: var(--font-serif); font-size: 24px; letter-spacing: 0.2px; }
+.sazetak { font-size: 14px; line-height: 1.55; color: rgba(20, 26, 16, 0.65); margin: 0; }
+.vise { font-size: 13px; font-weight: 600; color: var(--nutal-zelena); margin-top: 2px; }
+@media (max-width: 800px) { .grid { grid-template-columns: 1fr; } }

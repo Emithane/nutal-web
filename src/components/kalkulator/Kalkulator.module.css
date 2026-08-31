@@ -1,0 +1,35 @@
+.kalk { max-width: 720px; }
+.polja { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: var(--space-2); align-items: end; }
+.polje { display: flex; flex-direction: column; gap: 6px; }
+.labela { font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.6px; color: rgba(20, 26, 16, 0.55); }
+.unos {
+  font: inherit;
+  font-size: 15px;
+  padding: 11px 12px;
+  border: 1px solid rgba(20, 26, 16, 0.25);
+  background: var(--nutal-bijela);
+  width: 100%;
+}
+.unos:focus { outline: 2px solid var(--nutal-zelena-brend); outline-offset: -1px; }
+.slojevi { display: flex; gap: 6px; }
+.sloj, .slojOn {
+  font: inherit;
+  font-size: 15px;
+  padding: 11px 0;
+  flex: 1;
+  border: 1px solid rgba(20, 26, 16, 0.25);
+  background: transparent;
+  cursor: pointer;
+  transition: border-color var(--transition), background var(--transition);
+}
+.sloj:hover { border-color: var(--nutal-zelena-brend); }
+.slojOn { background: var(--nutal-zelena-tamna); border-color: var(--nutal-zelena-tamna); color: var(--nutal-bijela); }
+.izdasnost { font-family: var(--font-mono); font-size: 13px; letter-spacing: -0.3px; color: rgba(20, 26, 16, 0.6); margin-top: var(--space-2); }
+.linkProizvod { color: var(--nutal-zelena); }
+.rezultat { margin-top: var(--space-3); border-top: 2px solid var(--nutal-zelena-brend); padding-top: var(--space-3); }
+.rezGlavni { display: flex; align-items: baseline; gap: var(--space-2); flex-wrap: wrap; }
+.rezBroj { font-family: var(--font-serif); font-size: clamp(40px, 6vw, 60px); letter-spacing: 0.2px; }
+.rezLabela { font-size: 15px; color: rgba(20, 26, 16, 0.65); }
+.rezRezerva { font-size: 15px; margin-top: var(--space-1); }
+.rezNapomena { font-size: 13px; color: rgba(20, 26, 16, 0.55); margin-top: var(--space-2); max-width: 520px; }
+@media (max-width: 700px) { .polja { grid-template-columns: 1fr; } }

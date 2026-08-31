@@ -3,7 +3,6 @@ import Hero from "@/components/home/Hero";
 import Kategorije from "@/components/home/Kategorije";
 import Statistike from "@/components/home/Statistike";
 import KalkulatorTeaser from "@/components/home/KalkulatorTeaser";
-import TutorijaliTeaser from "@/components/home/TutorijaliTeaser";
 
 export const metadata: Metadata = {
   title: "NUTAL — Tvornica boja i lakova, Vitez",
@@ -18,7 +17,9 @@ export const metadata: Metadata = {
  * - ton karta teaser (vraća se kad NUTAL dostavi šifre nijansi — komponenta
  *   TonKartaTeaser postoji i čeka)
  * Tok: hero (usmjeri) → kategorije (mapa po materijalu) → statistike (dokaz)
- * → kalkulator (alat) → tutorijali (DIY dubina). Nav i footer u layout-u.
+ * → kalkulator (alat). Tutorijali su premješteni U PORTALE (odluka klijenta,
+ * sedmica 3: "tutorijal se pojavi kad se zakopaš u DIY, ne na prvoj strani") —
+ * landing je čist usmjerivač, dubina se otvara ulaskom u portal.
  */
 export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
@@ -28,7 +29,6 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
       <Kategorije lang={lang} />
       <Statistike />
       <KalkulatorTeaser lang={lang} />
-      <TutorijaliTeaser lang={lang} />
     </main>
   );
 }

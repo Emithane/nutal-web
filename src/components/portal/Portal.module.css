@@ -107,3 +107,18 @@
   .trazi { min-width: 0; width: 100%; }
   .heroInner { padding-top: var(--space-4); }
 }
+
+/* ---------- tutorijali portala ---------- */
+.tutSekcija { max-width: var(--max-width); margin: 0 auto; padding: 0 var(--space-3) var(--space-6); }
+.tutHead { display: flex; justify-content: space-between; align-items: flex-end; gap: var(--space-2); border-top: 1px solid rgba(20, 26, 16, 0.12); padding-top: var(--space-4); margin-bottom: var(--space-3); }
+.tutEyebrow { display: block; font-family: var(--font-mono); font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 1.2px; color: var(--nutal-zelena); margin-bottom: var(--space-1); }
+.tutNaslov { font-family: var(--font-serif); font-weight: 400; font-size: 32px; letter-spacing: 0.2px; margin: 0; }
+.tutSvi { font-size: 14px; font-weight: 600; color: var(--nutal-zelena); white-space: nowrap; }
+.tutGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3); }
+.tutCard { display: flex; flex-direction: column; gap: 6px; }
+.tutSlika { display: block; aspect-ratio: 4 / 3; background-size: cover; background-position: center; border-radius: var(--radius); margin-bottom: var(--space-1); transition: transform var(--transition); }
+.tutCard:hover .tutSlika { transform: translateY(-3px); }
+.tutKat { font-family: var(--font-mono); font-size: 10px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; color: var(--nutal-zelena); }
+.tutTitl { font-family: var(--font-serif); font-size: 22px; letter-spacing: 0.2px; }
+.tutSazetak { font-size: 14px; line-height: 1.55; color: rgba(20, 26, 16, 0.65); margin: 0; }
+@media (max-width: 800px) { .tutGrid { grid-template-columns: 1fr; } }

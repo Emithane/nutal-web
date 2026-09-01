@@ -160,3 +160,34 @@
 }
 .sisDugme:hover { background: var(--nutal-zelena-tamna); }
 @media (max-width: 900px) { .sisGrid { grid-template-columns: 1fr; } }
+
+/* ---------- industry: tehnička lista ---------- */
+.lista { list-style: none; margin: 0; padding: 0; border-top: 1px solid rgba(20, 26, 16, 0.15); }
+.red {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--space-3);
+  align-items: baseline;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(20, 26, 16, 0.1);
+  transition: background var(--transition);
+}
+.red:hover { background: var(--nutal-pistacija); }
+.redGlavno { display: flex; align-items: baseline; gap: var(--space-2); flex-wrap: wrap; }
+.redIme { font-family: var(--font-serif); font-size: 20px; letter-spacing: 0.2px; }
+.redTagline { font-size: 13px; color: rgba(20, 26, 16, 0.6); }
+.redMeta { display: flex; align-items: baseline; gap: var(--space-2); }
+.redTags { font-family: var(--font-mono); font-size: 11px; color: rgba(20, 26, 16, 0.45); white-space: nowrap; }
+.redTds {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--nutal-zelena);
+  border: 1px solid currentColor;
+  padding: 2px 6px;
+}
+@media (max-width: 800px) {
+  .red { grid-template-columns: 1fr; gap: 4px; }
+  .redTags { white-space: normal; }
+}

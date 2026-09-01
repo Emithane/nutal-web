@@ -8,6 +8,7 @@ import ProductExplorer, { type ExplorerItem } from "./ProductExplorer";
 import { PRODUCT_PHOTOS } from "@/lib/content/productPhotos";
 import PortalTutorijali from "./PortalTutorijali";
 import PortalSistemi from "./PortalSistemi";
+import FlooringPrica from "./FlooringPrica";
 import styles from "./Portal.module.css";
 
 /** Server dio portala: hero + izrezani podaci za klijentski explorer. */
@@ -20,7 +21,8 @@ export default function PortalPage({ lang, slug }: { lang: string; slug: string 
     const katId = getDisplayCategoryId(p);
     return {
       slug: p.slug,
-      foto: PRODUCT_PHOTOS[p.slug] ?? "",
+      foto: cfg.prikaz === "kartice" ? PRODUCT_PHOTOS[p.slug] ?? "" : "",
+      imaTds: Boolean(p.tds),
       ime: ime.trim(),
       tagline: rest.join("—").trim(),
       opis: p.opis ?? "",
@@ -43,8 +45,9 @@ export default function PortalPage({ lang, slug }: { lang: string; slug: string 
           <p className={styles.lede}>{cfg.lede}</p>
         </div>
       </section>
-      <ProductExplorer lang={lang} items={items} />
+      <ProductExplorer lang={lang} items={items} prikaz={cfg.prikaz} />
       {slug === "industry" && <PortalSistemi />}
+      {slug === "flooring" && <FlooringPrica />}
       <PortalTutorijali lang={lang} slug={slug} />
     </main>
   );

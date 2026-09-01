@@ -15,6 +15,7 @@ const KAT_RED = ["metal", "drvo", "zid", "podovi", "ceste", "pomocni"];
 export interface ExplorerItem {
   slug: string;
   foto: string;
+  imaTds: boolean;
   ime: string;       // dio naziva prije "—"
   tagline: string;   // dio naziva poslije "—"
   opis: string;
@@ -29,9 +30,11 @@ export interface ExplorerItem {
 export default function ProductExplorer({
   lang,
   items,
+  prikaz = "kartice",
 }: {
   lang: string;
   items: ExplorerItem[];
+  prikaz?: "kartice" | "lista";
 }) {
   const [kat, setKat] = useState<string>("sve");
   const [komp, setKomp] = useState<string>("sve");
@@ -140,6 +143,27 @@ export default function ProductExplorer({
           Nema proizvoda za ovaj izbor. Poništite filtere ili nas pitajte —
           možda postoji rješenje koje još nije na sajtu.
         </p>
+      ) : prikaz === "lista" ? (
+        <ul className={styles.lista}>
+          {rezultat.map((it) => (
+            <li key={it.slug}>
+              <Link href={`/${lang}/proizvodi/${it.slug}`} className={styles.red}>
+                <span className={styles.redGlavno}>
+                  <span className={styles.redIme}>{it.ime}</span>
+                  <span className={styles.redTagline}>{it.tagline}</span>
+                </span>
+                <span className={styles.redMeta}>
+                  {it.imaTds && <span className={styles.redTds}>TDS</span>}
+                  <span className={styles.redTags}>
+                    {[it.tehnologija, it.komponente, it.finish]
+                      .filter(Boolean)
+                      .join(" · ")}
+                  </span>
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
       ) : (
         <ul className={styles.grid}>
           {rezultat.map((it) => (

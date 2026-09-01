@@ -12,6 +12,9 @@ export interface PortalConfig {
   naslov: string;
   lede: string;
   foto: string;
+  /** Prikaz proizvoda: DIY kupuje limenku (kartice sa packshotom),
+   *  izvođač bira stavku iz specifikacije (tehnička lista bez mockupova). */
+  prikaz: "kartice" | "lista";
 }
 
 export const PORTALS: PortalConfig[] = [
@@ -22,6 +25,7 @@ export const PORTALS: PortalConfig[] = [
     naslov: "Svaki projekat počinje dobrom podlogom.",
     lede: "Boje, lazure i lakovi za zid, drvo, ogradu i namještaj — u pakovanjima za kućnu upotrebu.",
     foto: PHOTOS.diyWood,
+    prikaz: "kartice",
   },
   {
     slug: "industry",
@@ -30,6 +34,7 @@ export const PORTALS: PortalConfig[] = [
     naslov: "Zaštita koja ostaje na poslu.",
     lede: "Antikorozivni sistemi po ISO 12944, premazi za ceste i industrijske linije — uz tehničku podršku pri izboru sistema.",
     foto: PHOTOS.industryBridge,
+    prikaz: "lista",
   },
   {
     slug: "flooring",
@@ -38,6 +43,7 @@ export const PORTALS: PortalConfig[] = [
     naslov: "Sloj po sloj, bez kompromisa.",
     lede: "Epoksidni i poliuretanski sistemi za garaže, radionice i proizvodne hale.",
     foto: PHOTOS.flooringEpoxy,
+    prikaz: "lista",
   },
 ];
 

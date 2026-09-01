@@ -14,6 +14,7 @@ const KAT_RED = ["metal", "drvo", "zid", "podovi", "ceste", "pomocni"];
 
 export interface ExplorerItem {
   slug: string;
+  foto: string;
   ime: string;       // dio naziva prije "—"
   tagline: string;   // dio naziva poslije "—"
   opis: string;
@@ -144,6 +145,14 @@ export default function ProductExplorer({
           {rezultat.map((it) => (
             <li key={it.slug}>
               <Link href={`/${lang}/proizvodi/${it.slug}`} className={styles.card}>
+                {it.foto ? (
+                  <span className={styles.cardFoto}>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={it.foto} alt="" loading="lazy" />
+                  </span>
+                ) : (
+                  <span className={styles.cardFotoPrazno} aria-hidden="true" />
+                )}
                 <span className={styles.cardKat}>{it.potkat || it.katNaziv}</span>
                 <span className={styles.cardIme}>{it.ime}</span>
                 <span className={styles.cardTagline}>{it.tagline}</span>

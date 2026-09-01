@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getAllProducts, getProductBySlug, getRelatedProducts } from "@/lib/content/products";
 import { KONTAKT } from "@/lib/content/kontakt";
+import { PRODUCT_PHOTOS } from "@/lib/content/productPhotos";
 import { LOCALES } from "@/lib/i18n";
 import styles from "./page.module.css";
 import type { TehnickiPodaci } from "@/lib/content/products";
@@ -81,11 +82,18 @@ export default async function ProductPage({
       {(() => {
         const [ime, ...rest] = p.naziv.split("—");
         const tagline = rest.join("—").trim();
+        const foto = PRODUCT_PHOTOS[p.slug];
         return (
-          <header className={styles.glava}>
-            <span className={styles.eyebrow}>{p.potkategorija || p.kategorija}</span>
-            <h1 className={styles.naslov}>{ime.trim()}</h1>
-            {tagline && <p className={styles.tagline}>{tagline}</p>}
+          <header className={foto ? styles.glavaSaFoto : styles.glava}>
+            <div>
+              <span className={styles.eyebrow}>{p.potkategorija || p.kategorija}</span>
+              <h1 className={styles.naslov}>{ime.trim()}</h1>
+              {tagline && <p className={styles.tagline}>{tagline}</p>}
+            </div>
+            {foto && (
+              /* eslint-disable-next-line @next/next/no-img-element */
+              <img src={foto} alt={p.naziv} className={styles.packshot} />
+            )}
           </header>
         );
       })()}

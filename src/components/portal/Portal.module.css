@@ -90,6 +90,22 @@
   transition: background var(--transition);
 }
 .card:hover { background: var(--nutal-pistacija); }
+.cardFoto, .cardFotoPrazno {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  margin: calc(-1 * var(--space-3)) calc(-1 * var(--space-3)) var(--space-1);
+  background: #f4f6f0;
+}
+.cardFoto img { width: 72%; height: auto; transition: transform var(--transition); }
+.card:hover .cardFoto img { transform: translateY(-4px); }
+.cardFotoPrazno {
+  background: #f4f6f0 url("/logo-nutal.svg") center / 44px no-repeat;
+  opacity: 0.9;
+  filter: grayscale(1);
+  background-blend-mode: luminosity;
+}
 .cardKat {
   font-family: var(--font-mono);
   font-size: 10px;

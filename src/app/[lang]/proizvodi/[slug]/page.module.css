@@ -74,3 +74,17 @@
 
 .kalkLink { margin-top: var(--space-2); font-size: 14px; font-weight: 600; }
 .kalkLink a { color: var(--nutal-zelena); }
+
+/* ---------- packshot ---------- */
+.glavaSaFoto {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-3);
+  margin-bottom: var(--space-2);
+}
+.packshot { width: min(240px, 34vw); height: auto; flex-shrink: 0; }
+@media (max-width: 640px) {
+  .glavaSaFoto { flex-direction: column-reverse; }
+  .packshot { width: 200px; align-self: center; }
+}

@@ -5,6 +5,7 @@ import {
   displayCategoryName,
 } from "@/lib/content/products";
 import ProductExplorer, { type ExplorerItem } from "./ProductExplorer";
+import { PRODUCT_PHOTOS } from "@/lib/content/productPhotos";
 import PortalTutorijali from "./PortalTutorijali";
 import PortalSistemi from "./PortalSistemi";
 import styles from "./Portal.module.css";
@@ -19,6 +20,7 @@ export default function PortalPage({ lang, slug }: { lang: string; slug: string 
     const katId = getDisplayCategoryId(p);
     return {
       slug: p.slug,
+      foto: PRODUCT_PHOTOS[p.slug] ?? "",
       ime: ime.trim(),
       tagline: rest.join("—").trim(),
       opis: p.opis ?? "",

@@ -122,3 +122,25 @@
 .tutTitl { font-family: var(--font-serif); font-size: 22px; letter-spacing: 0.2px; }
 .tutSazetak { font-size: 14px; line-height: 1.55; color: rgba(20, 26, 16, 0.65); margin: 0; }
 @media (max-width: 800px) { .tutGrid { grid-template-columns: 1fr; } }
+
+/* ---------- Industry: sistem premaza ---------- */
+.sisSekcija { max-width: var(--max-width); margin: 0 auto; padding: 0 var(--space-3) var(--space-6); }
+.sisGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); }
+.sisBlok { display: flex; flex-direction: column; gap: var(--space-1); }
+.sisNaslov { font-family: var(--font-serif); font-weight: 400; font-size: 22px; letter-spacing: 0.2px; margin: 0; padding-bottom: var(--space-1); border-bottom: 2px solid var(--nutal-zelena-brend); }
+.sisTekst { font-size: 15px; line-height: 1.65; color: rgba(20, 26, 16, 0.8); margin: 0; }
+.sisDugme {
+  align-self: flex-start;
+  margin-top: var(--space-2);
+  display: inline-block;
+  background: var(--nutal-zelena-brend);
+  color: var(--nutal-bijela);
+  padding: 14px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  transition: background var(--transition);
+}
+.sisDugme:hover { background: var(--nutal-zelena-tamna); }
+@media (max-width: 900px) { .sisGrid { grid-template-columns: 1fr; } }

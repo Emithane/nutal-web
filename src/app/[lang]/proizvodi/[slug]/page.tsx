@@ -22,7 +22,10 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const p = getProductBySlug(slug);
-  return { title: p ? `${p.naziv} — NUTAL` : "Proizvod — NUTAL" };
+  return {
+    title: p ? p.naziv : "Proizvod",
+    description: p?.opis || undefined,
+  };
 }
 
 

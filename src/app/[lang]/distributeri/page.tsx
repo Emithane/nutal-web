@@ -1,6 +1,6 @@
 import UPripremi from "@/components/ui/UPripremi";
 
-export const metadata = { title: "Distributeri — NUTAL" };
+export const metadata = { title: "Distributeri" };
 
 export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;

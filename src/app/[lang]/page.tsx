@@ -5,7 +5,7 @@ import Statistike from "@/components/home/Statistike";
 import KalkulatorTeaser from "@/components/home/KalkulatorTeaser";
 
 export const metadata: Metadata = {
-  title: "NUTAL — Tvornica boja i lakova, Vitez",
+  title: { absolute: "NUTAL — Tvornica boja i lakova, Vitez" },
   description:
     "Proizvođač boja i lakova iz Viteza od 1996. Premazi za drvo, metal i beton — od kućne upotrebe do industrijskih sistema zaštite i epoksidnih podova.",
 };

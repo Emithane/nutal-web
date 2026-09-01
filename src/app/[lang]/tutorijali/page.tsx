@@ -4,7 +4,7 @@ import { PHOTOS } from "@/lib/content/interimPhotos";
 import styles from "./page.module.css";
 
 export const metadata = {
-  title: "Tutorijali — NUTAL",
+  title: "Tutorijali",
   description:
     "Vodiči korak po korak iz proizvodnje i primjene: zidovi, metal, drvo, podovi.",
 };

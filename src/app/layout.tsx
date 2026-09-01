@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { SITE_URL, SITE_NAME, IS_PRODUCTION_DOMAIN } from "@/lib/site";
 
 /*
  * Fontovi — self-hostani kroz @fontsource (brže, GDPR-čišće).
@@ -19,9 +20,18 @@ import "@fontsource/albert-sans/600.css";
 import "@fontsource/jetbrains-mono/500.css";
 
 export const metadata: Metadata = {
-  title: "NUTAL — Tvornica boja i lakova, Vitez",
+  metadataBase: new URL(SITE_URL),
+  title: { default: SITE_NAME, template: "%s — NUTAL" },
   description:
     "NUTAL d.o.o. Vitez — proizvođač boja, lakova i premaza za dom, industriju i podne sisteme. Od 1996.",
+  openGraph: {
+    type: "website",
+    siteName: "NUTAL",
+    locale: "bs_BA",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "NUTAL — Tvornica boja i lakova, Vitez" }],
+  },
+  twitter: { card: "summary_large_image" },
+  robots: { index: IS_PRODUCTION_DOMAIN, follow: IS_PRODUCTION_DOMAIN },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

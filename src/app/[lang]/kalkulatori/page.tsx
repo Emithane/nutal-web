@@ -4,7 +4,7 @@ import KalkulatorPotrosnje from "@/components/kalkulator/KalkulatorPotrosnje";
 import styles from "./page.module.css";
 
 export const metadata = {
-  title: "Kalkulator potrošnje — NUTAL",
+  title: "Kalkulator potrošnje",
   description:
     "Izračunajte koliko boje vam treba: površina, broj slojeva i izdašnost proizvoda iz NUTAL kataloga.",
 };

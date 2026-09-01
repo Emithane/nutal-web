@@ -2,7 +2,7 @@ import Link from "next/link";
 import styles from "./page.module.css";
 
 export const metadata = {
-  title: "O nama — NUTAL, tvornica boja i lakova, Vitez",
+  title: "O nama",
   description:
     "NUTAL je tvornica boja i lakova iz Viteza, od 1996. Razvijamo i proizvodimo premaze za drvo, metal, zidove, fasade i podove.",
 };

@@ -2,7 +2,7 @@ import { KONTAKT } from "@/lib/content/kontakt";
 import styles from "./page.module.css";
 
 export const metadata = {
-  title: "Kontakt — NUTAL, tvornica boja i lakova, Vitez",
+  title: "Kontakt",
   description:
     "NUTAL d.o.o., Počulica b.b., 72250 Vitez. Telefon +387 30 522 220, info@nutal.ba.",
 };

@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const t = getTutorialBySlug(slug);
   return {
-    title: t ? `${t.naslov} — NUTAL` : "Tutorijal — NUTAL",
+    title: t ? `${t.naslov}` : "Tutorijal",
     description: t?.sazetak,
   };
 }

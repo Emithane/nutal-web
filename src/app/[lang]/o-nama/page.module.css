@@ -46,3 +46,10 @@
 }
 .solid:hover { background: var(--nutal-zelena-tamna); }
 .quiet { font-size: 14px; font-weight: 600; border-bottom: 1px solid var(--nutal-tekst); padding-bottom: 2px; }
+
+@media (max-width: 700px) {
+  .naslov { font-size: clamp(28px, 7.5vw, 38px); }
+  .izdvojeno { font-size: 21px; }
+  .zakljucak { font-size: 19px; }
+  .prose p { font-size: 15px; }
+}

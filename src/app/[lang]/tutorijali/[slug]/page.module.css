@@ -37,3 +37,12 @@
 .dno { display: flex; justify-content: space-between; align-items: center; gap: var(--space-2); flex-wrap: wrap; border-top: 1px solid rgba(20, 26, 16, 0.1); padding-top: var(--space-3); }
 .nazad, .portalLink { font-weight: 600; font-size: 14px; }
 .portalLink { color: var(--nutal-zelena); }
+
+@media (max-width: 700px) {
+  .naslov { font-size: clamp(26px, 7.5vw, 34px); }
+  .sazetak { font-size: 16px; }
+  .korak { grid-template-columns: 34px 1fr; }
+  .korakNaslov { font-size: 18px; }
+  .podnaslov { font-size: 21px; }
+  .zakljucak { font-size: 19px; }
+}

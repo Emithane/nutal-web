@@ -5,3 +5,8 @@
 .lede { font-size: 17px; line-height: 1.6; color: rgba(20, 26, 16, 0.75); }
 .fusnota { font-size: 13px; color: rgba(20, 26, 16, 0.55); margin-top: var(--space-4); }
 .fusnota a { color: var(--nutal-zelena); }
+
+@media (max-width: 700px) {
+  .naslov { font-size: clamp(26px, 7vw, 36px); }
+  .lede { font-size: 15px; }
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="10" fill="#398133"/>
+  <g fill="#ffffff" transform="translate(32 32)">
+    <path id="leaf" d="M0,-2 C -11,-11 -21,-5 -18,5 C -16,12 -7,15 0,8 C 7,15 16,12 18,5 C 21,-5 11,-11 0,-2 Z" transform="rotate(0) translate(0 -13)"/>
+    <path d="M0,-2 C -11,-11 -21,-5 -18,5 C -16,12 -7,15 0,8 C 7,15 16,12 18,5 C 21,-5 11,-11 0,-2 Z" transform="rotate(90) translate(0 -13)"/>
+    <path d="M0,-2 C -11,-11 -21,-5 -18,5 C -16,12 -7,15 0,8 C 7,15 16,12 18,5 C 21,-5 11,-11 0,-2 Z" transform="rotate(180) translate(0 -13)"/>
+    <path d="M0,-2 C -11,-11 -21,-5 -18,5 C -16,12 -7,15 0,8 C 7,15 16,12 18,5 C 21,-5 11,-11 0,-2 Z" transform="rotate(270) translate(0 -13)"/>
+  </g>
+</svg>

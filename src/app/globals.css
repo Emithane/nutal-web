@@ -72,3 +72,15 @@ a:hover { text-decoration: underline; }
   font-weight: 500;
   letter-spacing: -0.5px;
 }
+
+/* ---------- MOBILNI SAJT (odluka klijenta, sedmica 3): manje teksta,
+   manji naslovi, gušći razmaci. Jedna skala steže cijeli sajt. ---------- */
+@media (max-width: 700px) {
+  :root {
+    --space-3: 20px;
+    --space-4: 28px;
+    --space-5: 40px;
+    --space-6: 52px;
+  }
+  body { font-size: 15px; }
+}

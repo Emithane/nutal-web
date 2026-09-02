@@ -10,3 +10,9 @@
 .adresa { font-style: normal; font-size: 15px; line-height: 1.6; color: rgba(20, 26, 16, 0.8); }
 .napomena { font-size: 13px; color: rgba(20, 26, 16, 0.5); margin-top: var(--space-4); }
 @media (max-width: 800px) { .grid { grid-template-columns: 1fr; } }
+
+@media (max-width: 700px) {
+  .naslov { font-size: clamp(26px, 7vw, 36px); }
+  .lede { font-size: 15px; }
+  .velika { font-size: 22px; }
+}

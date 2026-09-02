@@ -189,6 +189,19 @@
   .swatchGrid { grid-template-columns: repeat(6, 1fr); }
 }
 @media (max-width: 768px) {
+  /* MOBILNO: opisi su desktop luksuz — panel nosi etiketu, rečenicu i CTA */
+  .panelDesc { display: none; }
+  .heroPanel { min-height: 240px; }
+  .heroTitle { font-size: 30px; }
+  .heroLede { font-size: 15px; }
+  .heroSolid { padding: 12px 16px; }
+  /* kategorije: broj + naziv = imenik, opis ostaje desktopu */
+  .katDesc { display: none; }
+  .katItem { padding: 14px 0; }
+  .katName { font-size: 20px; }
+  .sectionTitle { font-size: 30px; }
+  .statNum { font-size: 26px; }
+  .kalkText { font-size: 22px; }
   .section { padding: var(--space-5) var(--space-2); }
   .sectionEyebrow {
   display: block;
